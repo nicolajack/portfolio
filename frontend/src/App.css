@@ -1,0 +1,138 @@
+body {
+  font-family: "instrument-serif", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background: #f3efe3;
+  color: #D8BE87;
+}
+
+#spacer {
+  height: 175px;
+}
+
+#about,
+#chat,
+#projects,
+#exp {
+  width: 60%;
+  margin: 30px auto;
+  background-color: #282E4C;
+  padding: 30px;
+  border-radius: 6px;
+}
+
+#projects h2,
+#about h2,
+#chat h2,
+#exp h2 {
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+#exp h3 {
+  color: #EFE3CA;
+  font-size: 25px;
+}
+
+#exp h4 {
+  font-family: Helvetica, sans-serif;
+  font-weight: 600px;
+}
+
+#exp p,
+#exp ul {
+  font-family: Helvetica, sans-serif;
+}
+
+#projects h4 {
+  color: #EFE3CA;
+  font-family: Helvetica, sans-serif;
+}
+
+#projects p {
+  font-family: Helvetica, sans-serif;
+}
+
+.project,
+.job {
+  background: #81859A;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  width: 75%;
+  padding: 25px;
+}
+
+#projects li,
+.job li {
+  margin-left: 25px;
+}
+
+button {
+  padding: 0.4rem 0.8rem;
+  border: 0.2rem solid #9497A8;
+  border-radius: 0.2rem;
+  background-color: #9497A8;
+  color: #EFE3CA;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+button:hover {
+  background-color: #797d90;
+  color: #bead89;
+}
+
+#paratext {
+  justify-content: center;
+  font-family: Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #81859A;
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+.fadeInUp-animation {
+  animation: 1.5s fadeInUp;
+}
+
+#githubchartcontainer {
+  width: 60%;
+  margin: 30px auto;
+  background-color: #282E4C;
+  padding: 30px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#githubchartcontainer h2{
+  color: #EFE3CA;
+  text-align: center;
+}
+
+#chartcontainer {
+  width: 80%;
+  margin: 20px auto;
+  background-color: #D8BE87;
+  padding: 30px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

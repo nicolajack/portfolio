@@ -1,0 +1,30 @@
+#navbar {
+    display: flex;
+    justify-content: space-evenly;
+    background: #282E4C;
+    padding: 20px 0;
+    align-items: center;
+    margin-bottom: 100px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+#navbar a {
+    color: #E1CDA1;
+    text-decoration: none;
+    font-size: 30px;
+    transition: color 0.2s;
+    font-family: Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+#navbar a:hover {
+    color: #c1a569;
+}
+
+#navbar h1 {
+    font-style: normal;
+    color:#EFE3CA;
+    font-size: 60px;
+}
