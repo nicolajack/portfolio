@@ -3,7 +3,7 @@ import './footer.css'
 function Footer() {
     return (
         <div className="footer">
-            <p>made by nico</p>
+            <h2>*there is no additional information. i am just fond of asterisks.</h2>
         </div>
     )
 }
