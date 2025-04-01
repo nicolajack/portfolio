@@ -66,3 +66,13 @@ input[type="text"]:focus {
     outline: none;
     border: 2px solid #9497A8;
 }
+
+.x {
+    position: absolute;
+    top: -25px;
+    right: -10px;
+    font-size: 0.8rem;
+    padding: 2px 5px;
+    border-radius: 50%;
+    border-width: 0.2rem;
+}
