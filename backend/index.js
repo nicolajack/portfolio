@@ -3,6 +3,7 @@ import cors from 'cors'
 import bodyParser from 'body-parser'
 import dotenv from 'dotenv'
 import { GoogleGenerativeAI } from '@google/generative-ai'
+import { MongoClient } from 'mongodb'
 
 dotenv.config()
 
@@ -11,6 +12,12 @@ app.use(cors())
 app.use(bodyParser.json())
 
 const PORT = process.env.PORT || 4000
+
+const mongourl = process.env.MONGO_URL
+const mongoclient = new MongoClient(mongourl, {})
+mongoclient.connect().then(() => {
+    console.log('MongoDB connected')
+})
 
 const genAI = new GoogleGenerativeAI(process.env.API_KEY)
 const model = genAI.getGenerativeModel({
