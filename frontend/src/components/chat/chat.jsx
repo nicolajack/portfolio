@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import {useEffect } from 'react'
 import './chat.css'
 
 function Chat() {
@@ -19,12 +20,33 @@ function Chat() {
                 throw new Error('Oops, something went wrong!')
             }
             const { message } = await response.json()
+            fetch('http://localhost:4000/add', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ input: userInput, response: message })
+            })
             setMessages([...messages, userInput, message])
         } catch (error) {
             console.error(error)
             return 'Oops, something went wrong!'
         }
     }
+
+    useEffect(() => {
+        fetch('http://localhost:4000/logs')
+            .then(res => res.json())
+            .then(data => {
+                let newMessages = []
+                for (let i = 0; i < data.length; i++) {
+                    newMessages.push(data[i].input)
+                    newMessages.push(data[i].response)
+                }
+                setMessages(newMessages)
+            })
+    }, [])
+    
 
     return (
         <div id="chat">
@@ -35,8 +57,9 @@ function Chat() {
             </form>
             {
                 messages.map((text, index) => (
-                    <div key={index} className='chatbox'>
-                        <p className={index % 2 == 0 ? 'user-message' : 'chatbot-response'}>{text}</p>
+                    <div key={index} className="chatbox">
+                        {index % 2 == 0 && <button className="x" onClick={() => deleteChatbox(index)}>X</button>}
+                        <p className={index % 2 == 0 ? "user-message" : "chatbot-response"}>{text}</p>
                     </div>
                 ))
             }
