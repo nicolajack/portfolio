@@ -91,7 +91,7 @@ app.post('/delete', async (req, res) => {
             res.status(400).json({ message: 'Bad Request' })
             return
         }
-        await mongoclient.db('personal-website').collection('logs').deleteOne(log)
+        await mongoclient.db('jdt-website').collection('logs').deleteOne(log)
         res.status(201).json({ message: 'Success' })
     } catch (error) {
         console.error(error)
