@@ -9,7 +9,7 @@ function Chat() {
     async function getResponse() {
         try {
             if (!userInput) return
-            const response = await fetch('http://localhost:4000/chat', {
+            const response = await fetch('https://nicolajackgithubio-production.up.railway.app/chat', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -20,7 +20,7 @@ function Chat() {
                 throw new Error('Oops, something went wrong!')
             }
             const { message } = await response.json()
-            fetch('http://localhost:4000/add', {
+            fetch('https://nicolajackgithubio-production.up.railway.app/add', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -51,7 +51,7 @@ function Chat() {
     }    
 
     useEffect(() => {
-        fetch('http://localhost:4000/logs')
+        fetch('https://nicolajackgithubio-production.up.railway.app/logs')
             .then(res => res.json())
             .then(data => {
                 let newMessages = []
