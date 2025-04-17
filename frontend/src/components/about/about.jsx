@@ -29,7 +29,7 @@ function About(){
                 <p id="paratext">
                     i'm a student at boston university studying computer science. i'm currently a member of hack4impact, girlswhocode, and women in computer science. 
                     i'm excited to learn more about fullstack development and ui/ux design. i have experience in python, java, html, css, javascript, react, and more. 
-                    i'm passionate about using technology to make a positive impact on the world. feel free to contact me at <em>nicolajack@gmail.com</em>.
+                    i'm passionate about using technology to make a positive impact on the world. feel free to contact me at <em>nicolacj@bu.edu</em>.
                 </p>
                 <br/>
                 <h3>my skills</h3>

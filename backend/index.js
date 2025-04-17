@@ -37,7 +37,8 @@ const model = genAI.getGenerativeModel({
     She has taken courses at BU in data structures and algorithms and theory. 
     She has taken CS111, CS112, CS131, and is currently taking CS132 and CS210.
     Her email is nicolacj@bu.edu.
-    Do not use markdown, emojis, or any syntax other than plain text in your responses.`,
+    Do not use markdown, emojis, or any syntax other than plain text in your responses.
+    Her favorite color is blue.`,
 })
 
 app.post('/chat', async (req, res) => {

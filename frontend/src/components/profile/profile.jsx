@@ -16,10 +16,10 @@ function Profile() {
                     <a target="_blank" href="https://github.com/nicolajack"><img id="github-img" width="60" src={GithubIcon} /></a>
                 </div>
                 <div className="links">
-                    <a target="_blank" href="mailto:nicolajack@gmail.com">
+                    <a target="_blank" href="mailto:nicolacj@bu.edu">
                         <button id="contact">contact</button>
                     </a>
-                    <a target="_blank" href="Nicola_Jackson.pdf">
+                    <a target="_blank" href="NCJ.pdf">
                         <button id="resume">resume</button>
                     </a>
                 </div>
