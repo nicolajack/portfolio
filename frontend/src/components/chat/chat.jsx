@@ -37,7 +37,7 @@ function Chat() {
     function deleteChatbox(index) {
         let newMessages = [...messages]
         newMessages.splice(index, 2)
-        fetch('[BACKEND HOST]/delete', {
+        fetch('https://nicolajackgithubio-production.up.railway.app/delete', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
