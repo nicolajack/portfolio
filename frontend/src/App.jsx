@@ -68,20 +68,25 @@ function App() {
                     sem="spring 2025"
                     title="CS 210: Computer Systems"
                     info="Fundamental concepts of computer systems and systems programming. Hardware fundamentals including digital logic, memory systems, processor design, buses, I/O subsystems, data representations, computer arithmetic, and instruction- set architecture. Software concepts including assembly language programming, operating systems, assemblers, linkers, and systems programming in C."
+                    grade="grade: A"
                     title2="CS 132: Geometric Algorithms"
-                    info2="Basic concepts, data structures, and algorithms for geometric objects. Examples of topics: Cartesian geometry, transformations and their representation, queries and sampling, triangulations. Emphasis on rigorous reasoning and analysis, advancing algorithmic maturity and expertise in its application.">
+                    info2="Basic concepts, data structures, and algorithms for geometric objects. Examples of topics: Cartesian geometry, transformations and their representation, queries and sampling, triangulations. Emphasis on rigorous reasoning and analysis, advancing algorithmic maturity and expertise in its application."
+                    grade2="grade: A">
                 </OldClasses>
                 <OldClasses 
                     sem="fall 2024"
                     title="CS 112: Introduction to Computer Science 2"
                     info="Covers advanced programming techniques and data structures. Topics include recursion, algorithm analysis, linked lists, stacks, queues, trees, graphs, tables, searching, and sorting."
+                    grade="grade: A-"
                     title2="CS 131: Combinatoric Structures"
-                    info2="Fundamentals of logic (the laws of logic, rules of inference, quantifiers, proofs and inductive reasoning), fundamental principles of counting (permutations, combinations), set theory, relations and functions, principles for manipulating basic combinatoric structures.">
+                    info2="Fundamentals of logic (the laws of logic, rules of inference, quantifiers, proofs and inductive reasoning), fundamental principles of counting (permutations, combinations), set theory, relations and functions, principles for manipulating basic combinatoric structures."
+                    grade2="grade: A">
                 </OldClasses>
                 <OldClasses
                     sem="spring 2024"
                     title="CS 111: Introduction to Computer Science 1"
-                    info="The first course for computer science majors and anyone seeking a rigorous introduction. Develops computational problem-solving skills by programming in the Python language, and exposes students to variety of other topics from computer science and its applications.">
+                    info="The first course for computer science majors and anyone seeking a rigorous introduction. Develops computational problem-solving skills by programming in the Python language, and exposes students to variety of other topics from computer science and its applications."
+                    grade="grade: A">
                 </OldClasses>
             </div>
 
