@@ -92,6 +92,7 @@ function App() {
                     title="CS 237: Probability in Computing"
                     info="Introduction to basic probabilistic concepts and methods used in computer science. Develops an understanding of the crucial role played by randomness in computing, both as a powerful tool and as a challenge to confront and analyze. Emphasis on rigorous reasoning, analysis, and algorithmic thinking.">
                 </Classes>
+                <h3>spring 2025</h3>
                 <OldClasses
                     title="CS 210: Computer Systems"
                     info="Fundamental concepts of computer systems and systems programming. Hardware fundamentals including digital logic, memory systems, processor design, buses, I/O subsystems, data representations, computer arithmetic, and instruction- set architecture. Software concepts including assembly language programming, operating systems, assemblers, linkers, and systems programming in C."

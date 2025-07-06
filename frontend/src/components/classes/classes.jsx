@@ -1,3 +1,5 @@
+import './classes.css'
+
 function Classes({title, info}) {
     return (
         <div className="job">

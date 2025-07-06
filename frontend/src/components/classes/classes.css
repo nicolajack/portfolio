@@ -1,0 +1,27 @@
+.toggler {
+    position: absolute;
+    background-color: #81859A;
+    cursor: pointer;
+    left: 0;
+    font-size: medium;
+    color: #E1CDA1;
+    margin-top: 0;
+    border-radius: .2rem;
+    border: none;
+}
+
+.toggler a:hover {
+    background-color: #E1CDA1;
+    color: #81859A;
+}
+
+#about h3 {
+    font-family: Helvetica, sans-serif;
+    font-weight: 600;
+    text-align: center;
+    font-size: 25px;
+}
+
+#about p {
+    text-align: center;
+}

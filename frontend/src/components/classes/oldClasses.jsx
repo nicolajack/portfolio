@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import './classes.css'
 
 function OldClasses({title, info, title2, info2}) {
     const [display, setDisplay] = useState('block')
