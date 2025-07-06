@@ -4,6 +4,7 @@ import Chat from './components/chat/chat'
 import Projects from './components/projects/projects'
 import Background from './components/bg'
 import Experiences from './components/experiences/experiences'
+import Classes from './components/classes/classes'
 import About from './components/about/about'
 import Footer from './components/footer'
 import './App.css'
@@ -54,7 +55,7 @@ function App() {
             </div>
 
             <div id="exp">
-                <h2>experiences</h2>
+                <h2>experience</h2>
                 <Experiences 
                     title="Fitness Attendant" 
                     info="FitRec, Boston, MA" 
@@ -77,6 +78,15 @@ function App() {
                     dates="January, 2024 - May, 2027" 
                     bullets={["Currently pursuing a BA in Computer Science.", "3.98 GPA", "Member of Girls Who Code, Women in Computer Science, Hack4Impact and Forge Design Labs.", "Prominent coursework: Intro to Computer Science 1, Intro to Computer Science 2, Computer Systems, Combinatorics, and Linear Algebra."]}>
                 </Experiences>
+            </div>
+
+            <div id="exp">
+                <h2>relevant coursework</h2>
+                <p>fall 2025</p>
+                <Classes
+                    title="CS 330: Introduction to Analysis of Algorithms"
+                    info="Examines the basic principles of algorithm design and analysis; asymptotic analysis; graph algorithms; greedy algorithms; dynamic programming; network flows; polynomial- time reductions; NP-hard and NP-complete problems.">
+                </Classes>
             </div>
 
             <div id="githubchartcontainer">
