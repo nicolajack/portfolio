@@ -5,6 +5,7 @@ import Projects from './components/projects/projects'
 import Background from './components/bg'
 import Experiences from './components/experiences/experiences'
 import Classes from './components/classes/classes'
+import OldClasses from './components/classes/oldClasses'
 import About from './components/about/about'
 import Footer from './components/footer'
 import './App.css'
@@ -82,11 +83,21 @@ function App() {
 
             <div id="exp">
                 <h2>relevant coursework</h2>
-                <p>fall 2025</p>
+                <h3>fall 2025</h3>
                 <Classes
                     title="CS 330: Introduction to Analysis of Algorithms"
                     info="Examines the basic principles of algorithm design and analysis; asymptotic analysis; graph algorithms; greedy algorithms; dynamic programming; network flows; polynomial- time reductions; NP-hard and NP-complete problems.">
                 </Classes>
+                <Classes
+                    title="CS 237: Probability in Computing"
+                    info="Introduction to basic probabilistic concepts and methods used in computer science. Develops an understanding of the crucial role played by randomness in computing, both as a powerful tool and as a challenge to confront and analyze. Emphasis on rigorous reasoning, analysis, and algorithmic thinking.">
+                </Classes>
+                <OldClasses
+                    title="CS 210: Computer Systems"
+                    info="Fundamental concepts of computer systems and systems programming. Hardware fundamentals including digital logic, memory systems, processor design, buses, I/O subsystems, data representations, computer arithmetic, and instruction- set architecture. Software concepts including assembly language programming, operating systems, assemblers, linkers, and systems programming in C."
+                    title2="CS 132: Geometric Algorithms"
+                    info2="Basic concepts, data structures, and algorithms for geometric objects. Examples of topics: Cartesian geometry, transformations and their representation, queries and sampling, triangulations. Emphasis on rigorous reasoning and analysis, advancing algorithmic maturity and expertise in its application.">
+                </OldClasses>
             </div>
 
             <div id="githubchartcontainer">
