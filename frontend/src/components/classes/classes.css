@@ -17,11 +17,11 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 0 auto 8px auto;
+    margin: 0 auto 0.5rem auto;
     width: 100%;
     text-align: center;
-    gap: 570px;
-    padding: 0 20px;
+    gap: 35.625rem;
+    padding: 0 1.25rem;
     box-sizing: border-box;
 }
 
@@ -34,7 +34,7 @@
     font-family: Helvetica, sans-serif;
     font-weight: 600;
     text-align: center;
-    font-size: 25px;
+    font-size: 1.563rem;
 }
 
 #about p {
@@ -42,7 +42,7 @@
 }
 
 #sem {
-    font-size: 20px !important;
+    font-size: 1.25rem !important;
     text-align: center;
     font-family: Helvetica, sans-serif;
     font-weight: normal;

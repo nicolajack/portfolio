@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 20px;
+    gap: 1.25rem;
 }
 
 .chatbox {
@@ -13,10 +13,10 @@
 
 .x {
     position: absolute;
-    top: -25px;
-    right: -10px;
+    top: -1.563rem;
+    right: -0.625rem;
     font-size: 0.8rem;
-    padding: 2px 5px;
+    padding: 0.125rem 0.3125rem;
     border-radius: 50%;
     border-width: 0.2rem;
 }
@@ -27,8 +27,8 @@
     font-family: Helvetica, sans-serif;
     background-color: #9497A8;
     color: #EFE3CA;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 0.625rem;
+    border-radius: 0.3125rem;
 }
 
 .user-message {
@@ -37,8 +37,8 @@
     font-family: Helvetica, sans-serif;
     background-color: #656981;
     color: #E6D6B5;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 0.625rem;
+    border-radius: 0.3125rem;
 }
 
 form {
@@ -54,10 +54,10 @@ input::placeholder {
 input[type="text"] {
     width: 100%;
     max-width: 400px;
-    padding: 10px 15px;
-    font-size: 16px;
+    padding: 0.625rem 0.9375rem;
+    font-size: 1rem;
     border: 2px solid #9497A8;
-    border-radius: 3px;
+    border-radius: 0.1875rem;
     background-color: #EFE3CA;
     color: #9497A8;
 }
@@ -69,10 +69,10 @@ input[type="text"]:focus {
 
 .x {
     position: absolute;
-    top: -25px;
-    right: -10px;
+    top: -1.563rem;
+    right: -0.625rem;
     font-size: 0.8rem;
-    padding: 2px 5px;
+    padding: 0.125rem 0.3125rem;
     border-radius: 50%;
     border-width: 0.2rem;
 }

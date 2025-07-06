@@ -2,9 +2,9 @@
     display: flex;
     justify-content: space-evenly;
     background: #282E4C;
-    padding: 20px 0;
+    padding: 1.25rem 0;
     align-items: center;
-    margin-bottom: 100px;
+    margin-bottom: 6.25rem;
     position: fixed;
     width: 100%;
     z-index: 1;
@@ -13,7 +13,7 @@
 #navbar a {
     color: #E1CDA1;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 1.875rem;
     transition: color 0.2s;
     font-family: Helvetica, sans-serif;
     font-weight: 600;
@@ -26,5 +26,5 @@
 #navbar h1 {
     font-style: normal;
     color:#EFE3CA;
-    font-size: 60px;
+    font-size: 3.75rem;
 }

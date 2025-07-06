@@ -7,15 +7,15 @@ body {
 }
 
 #spacer {
-  height: 210px;
+  height: 13.125rem;
 }
 
 #sem2 {
-    font-size: 20px !important;
+    font-size: 1.25rem !important;
     text-align: left;
     font-family: Helvetica, sans-serif;
     font-weight: normal;
-    margin: 0 0 8px 90px !important;
+    margin: 0 0 0.5rem 5.625rem !important;
     color: #D8BE87 !important;
 }
 
@@ -24,10 +24,10 @@ body {
 #projects,
 #exp {
   width: 60%;
-  margin: 30px auto;
+  margin: 1.875rem auto;
   background-color: #282E4C;
-  padding: 30px;
-  border-radius: 6px;
+  padding: 1.875rem;
+  border-radius: 0.375rem;
 }
 
 #projects h2,
@@ -35,19 +35,19 @@ body {
 #chat h2,
 #exp h2 {
   text-align: center;
-  font-size: 35px;
-  margin-bottom: 15px;
+  font-size: 2.188rem;
+  margin-bottom: 0.9375rem;
   position: relative;
 }
 
 #exp h3 {
   color: #EFE3CA;
-  font-size: 25px;
+  font-size: 1.563rem;
 }
 
 #exp h4 {
   font-family: Helvetica, sans-serif;
-  font-weight: 600px;
+  font-weight: 600;
 }
 
 #exp p,
@@ -68,14 +68,14 @@ body {
 .job {
   background: #81859A;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
   width: 75%;
-  padding: 25px;
+  padding: 1.5625rem;
 }
 
 #projects li,
 .job li {
-  margin-left: 25px;
+  margin-left: 1.5625rem;
 }
 
 button {
@@ -100,7 +100,7 @@ button:hover {
   justify-content: center;
   font-family: Helvetica, sans-serif;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 1.25rem;
   color: #81859A;
 }
 
@@ -121,10 +121,10 @@ button:hover {
 
 #githubchartcontainer {
   width: 60%;
-  margin: 30px auto;
+  margin: 1.875rem auto;
   background-color: #282E4C;
-  padding: 30px;
-  border-radius: 6px;
+  padding: 1.875rem;
+  border-radius: 0.375rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -137,10 +137,10 @@ button:hover {
 
 #chartcontainer {
   width: 80%;
-  margin: 20px auto;
+  margin: 1.25rem auto;
   background-color: #D8BE87;
-  padding: 30px;
-  border-radius: 6px;
+  padding: 1.875rem;
+  border-radius: 0.375rem;
   display: flex;
   flex-direction: column;
   align-items: center;
