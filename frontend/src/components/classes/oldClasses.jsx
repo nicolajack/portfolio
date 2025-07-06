@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './classes.css'
 
-function OldClasses({title, info, title2, info2}) {
+function OldClasses({sem, title, info, title2, info2}) {
     const [display, setDisplay] = useState('block')
     const [buttonText, setButtonText] = useState('hide')
 
@@ -17,10 +17,14 @@ function OldClasses({title, info, title2, info2}) {
 
     return (
         <div>
-            <button className="toggler" onClick={toggle}>{buttonText}</button>
+            <div className="header">
+                <h2 id="sem">{sem}</h2>
+                <button className="toggler" onClick={toggle}>{buttonText}</button>
+            </div>
             <div className="job" style={{display: display}}>
                 <h3>{title}</h3>
                 <h4>{info}</h4>
+                <br></br>
                 <h3>{title2}</h3>
                 <h4>{info2}</h4>
             </div>

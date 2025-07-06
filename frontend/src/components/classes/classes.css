@@ -1,13 +1,28 @@
 .toggler {
-    position: absolute;
     background-color: #81859A;
     cursor: pointer;
-    left: 0;
     font-size: medium;
     color: #E1CDA1;
-    margin-top: 0;
     border-radius: .2rem;
     border: none;
+    display: inline-block;
+    margin: 0;
+    position: static !important;
+    left: auto !important;
+    font-weight: normal;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 8px auto;
+    width: 100%;
+    text-align: center;
+    gap: 570px;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 .toggler a:hover {
@@ -24,4 +39,13 @@
 
 #about p {
     text-align: center;
+}
+
+#sem {
+    font-size: 20px !important;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    font-weight: normal;
+    margin: 0 !important;
+    color: #D8BE87 !important;
 }

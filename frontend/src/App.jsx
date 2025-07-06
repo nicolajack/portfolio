@@ -83,21 +83,31 @@ function App() {
 
             <div id="exp">
                 <h2>relevant coursework</h2>
-                <h3>fall 2025</h3>
+                <h3 id="sem2">fall 2025</h3>
                 <Classes
                     title="CS 330: Introduction to Analysis of Algorithms"
-                    info="Examines the basic principles of algorithm design and analysis; asymptotic analysis; graph algorithms; greedy algorithms; dynamic programming; network flows; polynomial- time reductions; NP-hard and NP-complete problems.">
+                    info="Examines the basic principles of algorithm design and analysis; asymptotic analysis; graph algorithms; greedy algorithms; dynamic programming; network flows; polynomial- time reductions; NP-hard and NP-complete problems."
+                    title2="CS 237: Probability in Computing"
+                    info2="Introduction to basic probabilistic concepts and methods used in computer science. Develops an understanding of the crucial role played by randomness in computing, both as a powerful tool and as a challenge to confront and analyze. Emphasis on rigorous reasoning, analysis, and algorithmic thinking.">
                 </Classes>
-                <Classes
-                    title="CS 237: Probability in Computing"
-                    info="Introduction to basic probabilistic concepts and methods used in computer science. Develops an understanding of the crucial role played by randomness in computing, both as a powerful tool and as a challenge to confront and analyze. Emphasis on rigorous reasoning, analysis, and algorithmic thinking.">
-                </Classes>
-                <h3>spring 2025</h3>
                 <OldClasses
+                    sem="spring 2025"
                     title="CS 210: Computer Systems"
                     info="Fundamental concepts of computer systems and systems programming. Hardware fundamentals including digital logic, memory systems, processor design, buses, I/O subsystems, data representations, computer arithmetic, and instruction- set architecture. Software concepts including assembly language programming, operating systems, assemblers, linkers, and systems programming in C."
                     title2="CS 132: Geometric Algorithms"
                     info2="Basic concepts, data structures, and algorithms for geometric objects. Examples of topics: Cartesian geometry, transformations and their representation, queries and sampling, triangulations. Emphasis on rigorous reasoning and analysis, advancing algorithmic maturity and expertise in its application.">
+                </OldClasses>
+                <OldClasses 
+                    sem="fall 2024"
+                    title="CS 112: Introduction to Computer Science 2"
+                    info="Covers advanced programming techniques and data structures. Topics include recursion, algorithm analysis, linked lists, stacks, queues, trees, graphs, tables, searching, and sorting."
+                    title2="CS 131: Combinatoric Structures"
+                    info2="Fundamentals of logic (the laws of logic, rules of inference, quantifiers, proofs and inductive reasoning), fundamental principles of counting (permutations, combinations), set theory, relations and functions, principles for manipulating basic combinatoric structures.">
+                </OldClasses>
+                <OldClasses
+                    sem="spring 2024"
+                    title="CS 111: Introduction to Computer Science 1"
+                    info="The first course for computer science majors and anyone seeking a rigorous introduction. Develops computational problem-solving skills by programming in the Python language, and exposes students to variety of other topics from computer science and its applications.">
                 </OldClasses>
             </div>
 
