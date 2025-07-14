@@ -15,8 +15,6 @@ function App() {
         <>
             <Background />
             <Navbar />
-            <div id="spacer">
-            </div>
             <Profile />
             <Chat/>
             <About />

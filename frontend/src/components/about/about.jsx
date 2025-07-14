@@ -21,8 +21,8 @@ function About(){
 
     return (
         <div id="about">
+            <button className="toggler" onClick={toggle}>{buttonText}</button>
             <h2>
-                <button className="toggler" onClick={toggle}>{buttonText}</button>
                 about me
             </h2>
             <div style={{display: display}}>
