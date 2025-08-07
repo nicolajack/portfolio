@@ -3,6 +3,9 @@ import CSS from '../../assets/css.svg'
 import HTML from '../../assets/html.svg'
 import JS from '../../assets/js.svg'
 import PY from '../../assets/py.svg'
+import TS from '../../assets/TS.png'
+import SQL from '../../assets/SQL.svg'
+import C from '../../assets/C.png'
 import { useState } from 'react'
 
 function About(){
@@ -37,7 +40,10 @@ function About(){
                     <img width="60" src={CSS} alt="css" />
                     <img width="60" src={HTML} alt="html" />
                     <img width="60"src={JS} alt="js" />
-                    <img width="60" src={PY} alt="python" />  
+                    <img width="60" src={TS} alt="ts" />
+                    <img width="60" src={PY} alt="python" />
+                    <img width="60" src={SQL} alt="sql" />
+                    <img width="60" src={C} alt="c" />
                 </div>
             </div>
         </div>
