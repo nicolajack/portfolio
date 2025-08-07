@@ -19,7 +19,7 @@ function Profile() {
                     <a target="_blank" href="mailto:nicolacj@bu.edu">
                         <button id="contact">contact</button>
                     </a>
-                    <a target="_blank" href="NCJ.pdf">
+                    <a target="_blank" href="NicolaJackson.pdf">
                         <button id="resume">resume</button>
                     </a>
                 </div>
