@@ -28,7 +28,7 @@ function About(){
             <div style={{display: display}}>
                 <p id="paratext">
                     i'm a student at boston university studying computer science. i'm currently a member of hack4impact, girlswhocode, and women in computer science. 
-                    i'm excited to learn more about fullstack development and ui/ux design. i have experience in python, java, html, css, javascript, react, and more. 
+                    i'm excited to learn more about fullstack development and ui/ux design. i have experience in python, java, html, css, javascript, typescript, react, sql, c and more. 
                     i'm passionate about using technology to make a positive impact on the world. feel free to contact me at <em>nicolacj@bu.edu</em>.
                 </p>
                 <br/>
@@ -37,7 +37,7 @@ function About(){
                     <img width="60" src={CSS} alt="css" />
                     <img width="60" src={HTML} alt="html" />
                     <img width="60"src={JS} alt="js" />
-                    <img width="60" src={PY} alt="python" />   
+                    <img width="60" src={PY} alt="python" />  
                 </div>
             </div>
         </div>
