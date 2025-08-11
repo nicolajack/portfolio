@@ -10,7 +10,13 @@
   [![My Skills](https://skillicons.dev/icons?i=react,js,html,css,mongodb,figma)](https://skillicons.dev)
   
   This website describes a bit about me, my positions, projects, and the classes I have taken at Boston University. The frontend is built with react and the backend utilizes MongoDB.
+
+
+https://github.com/user-attachments/assets/a2ab85f4-4c5e-46e0-bdd4-99be799c492f
+
+
+  
+  
 </div>
 
-https://github.com/user-attachments/assets/b1a96a6e-20e7-4498-be49-dfcdb9324bb8
 
