@@ -24,3 +24,10 @@
     color:#EFE3CA;
     font-size: 3.75rem;
 }
+
+#name:hover {
+    color: #c1a569;
+    text-shadow: 0 0 5px rgba(193, 166, 105, 0.8);
+    transition: color 0.2s;
+    cursor: pointer;
+}
