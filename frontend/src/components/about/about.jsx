@@ -6,6 +6,8 @@ import PY from '../../assets/py.svg'
 import TS from '../../assets/TS.png'
 import SQL from '../../assets/SQL.svg'
 import C from '../../assets/C.png'
+import PANDAS from '../../assets/pandas.png'
+import NUMPY from '../../assets/NumPy.png'
 import { useState } from 'react'
 
 function About(){
@@ -42,8 +44,14 @@ function About(){
                     <img width="60"src={JS} alt="js" />
                     <img width="60" src={TS} alt="ts" />
                     <img width="60" src={PY} alt="python" />
-                    <img width="60" src={SQL} alt="sql" />
                     <img width="60" src={C} alt="c" />
+                </div>
+                <br />
+                <h3>currently learning</h3>
+                <div className="icons">
+                    <img width="60" src={PANDAS} alt="pandas" />
+                    <img width="60" src={SQL} alt="sql" />
+                    <img width="60" src={NUMPY} alt="numpy" />
                 </div>
             </div>
         </div>
