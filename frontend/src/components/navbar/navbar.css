@@ -6,6 +6,24 @@
     align-items: center;
 }
 
+#darkModeToggle {
+    background: none !important;
+    border: none !important;
+}
+
+#darkMode {
+    width: 2.8rem;
+    height: 2.8rem;
+    cursor: pointer;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+#darkMode:hover {
+    filter: brightness(0.8);
+    transition: filter 0.2s;
+}
+
 #navbar a {
     color: #E1CDA1;
     text-decoration: none;

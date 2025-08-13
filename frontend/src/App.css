@@ -130,9 +130,18 @@ button:hover {
   align-items: center;
 }
 
+body.dark-mode #githubchartcontainer {
+  background-color: #697565;
+}
+
+
 #githubchartcontainer h2{
   color: #EFE3CA;
   text-align: center;
+}
+
+body.dark-mode #githubchartcontainer h2{
+  color: #ECDFCC;
 }
 
 #chartcontainer {
@@ -146,9 +155,118 @@ button:hover {
   align-items: center;
 }
 
+body.dark-mode #chartcontainer {
+  background-color: #363f33;
+}
+
 #grade {
   font-weight: normal !important;
   font-style: italic;
   margin-top: 5px;
   color: #EFE3CA !important;
+}
+
+body.dark-mode {
+  background: #1E201E;
+  color: #363f33;
+}
+
+body.dark-mode #about,
+body.dark-mode #chat,
+body.dark-mode #projects,
+body.dark-mode #exp,
+body.dark-mode #navbar {
+  background-color: #697565;
+  color: #ECDFCC;
+}
+
+body.dark-mode #navbar a {
+  color: #ECDFCC;
+}
+body.dark-mode #navbar a:hover {
+  color: #d2c4ae;
+}
+
+body.dark-mode #profile h2 {
+  color: #ECDFCC;
+}
+
+body.dark-mode #profile p {
+  color: #697565;
+}
+
+body.dark-mode #profile button {
+  border: 0.2rem solid #697565;
+  background-color: #697565;
+  color: #ECDFCC;
+}
+
+body.dark-mode #profile button:hover {
+  background-color: #ECDFCC;
+  color: #697565;
+}
+
+body.dark-mode .chatbot-response {
+  background-color: #ECDFCC;
+  color: #697565;
+}
+
+body.dark-mode .user-message {
+  background-color: #4a5547;
+  color: #ECDFCC;
+}
+
+body.dark-mode input[type="text"] {
+  border: 2px solid #4a5547;
+  background-color: #ECDFCC;
+  color: #697565;
+}
+
+body.dark-mode input::placeholder {
+  color: #4a5547;
+}
+
+body.dark-mode button {
+  border: 0.2rem solid #4a5547;
+  background-color: #4a5547;
+  color: #ECDFCC;
+}
+
+body.dark-mode button:hover {
+  background-color: #ECDFCC;
+  color: #4a5547;
+}
+
+body.dark-mode .toggler {
+  background-color: #4a5547;
+  color: #ECDFCC;
+}
+
+body.dark-mode .toggler a:hover {
+  background-color: #ECDFCC;
+  color: #4a5547;
+}
+
+body.dark-mode #about p {
+  color: #363f33;
+}
+
+body.dark-mode .project,
+body.dark-mode .job,
+body.dark-mode .exp {
+  background-color: #4a5547;
+  color: #ECDFCC;
+}
+
+body.dark-mode .project button {
+  background-color: #363f33;
+}
+body.dark-mode .project button:hover {
+  background-color: #ECDFCC;
+  color: #363f33;
+}
+
+body.dark-mode .footer {
+  background-color: #4a5547;
+  color: #ECDFCC;
 }

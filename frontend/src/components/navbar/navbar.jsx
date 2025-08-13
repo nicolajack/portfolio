@@ -1,4 +1,5 @@
 import './navbar.css'
+import darkMode from '../../assets/brightness.png'
 
 function Navbar() {
     return (
@@ -8,6 +9,9 @@ function Navbar() {
             <a href="#projects">projects</a>
             <a href="#exp">experiences</a>
             <a href="#chat">chat</a>
+            <button id="darkModeToggle"onClick={() => document.body.classList.toggle("dark-mode")}>
+                <img id="darkMode" src={darkMode} alt="dark mode" />
+            </button>
         </div>
     )
 }
