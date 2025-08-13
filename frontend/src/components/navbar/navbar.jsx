@@ -1,5 +1,5 @@
 import './navbar.css'
-import darkMode from '../../assets/brightness.png'
+import darkMode from '../../assets/dark-mode.png'
 
 function Navbar() {
     return (
