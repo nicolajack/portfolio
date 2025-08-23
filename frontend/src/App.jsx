@@ -55,6 +55,40 @@ function App() {
             </div>
 
             <div id="exp">
+                <h2>experience</h2>
+                <Experiences
+                    title="CS 111 Course Assistant"
+                    info="Boston University, Boston, MA"
+                    dates="August, 2025 - Present"
+                    bullets={["Assist students in CS 111 labs and office hours with debugging and understanding course material.", 
+                    "Hold weekly office hours to help students with coursework and projects.", 
+                    "Grade assignments and provide constructive feedback to help students improve their coding skills."]}>
+                </Experiences>
+                <Experiences 
+                    title="Fitness Attendant" 
+                    info="FitRec, Boston, MA" 
+                    dates="January, 2024 - Present" 
+                    bullets={["Built relationships with clients to ensure their satisfaction with services provided.", 
+                    "Enforced rules and regulations and maintained safety and order by monitoring patrons' facility use.", 
+                    "Promoted healthy spirit, mind, and body philosophy."]}>
+                </Experiences>
+                <Experiences 
+                    title="Shift Leader" 
+                    info="Three Sisters, Providence, RI" 
+                    dates="June, 2021 - Ocotober, 2023" 
+                    bullets={["Trained new employees in job duties, safety procedures, and company policies.", 
+                    "Provided excellent customer service and developed strong relationships with customers.", 
+                    "Held team members accountable during shift by effectively coaching to improve performance."]}>
+                </Experiences>
+                <Experiences 
+                    title="Student" 
+                    info="Boston University, Boston, MA" 
+                    dates="January, 2024 - May, 2027" 
+                    bullets={["Currently pursuing a BA in Computer Science.", "3.98 GPA", "Member of Girls Who Code, Women in Computer Science, Hack4Impact and Forge Design Labs.", "Prominent coursework: Intro to Computer Science 1, Intro to Computer Science 2, Computer Systems, Combinatorics, and Linear Algebra."]}>
+                </Experiences>
+            </div>
+
+            <div id="exp">
                 <h2>relevant coursework</h2>
                 <h3 id="sem2">fall 2025</h3>
                 <Classes
@@ -87,40 +121,6 @@ function App() {
                     info="The first course for computer science majors and anyone seeking a rigorous introduction. Develops computational problem-solving skills by programming in the Python language, and exposes students to variety of other topics from computer science and its applications."
                     grade="grade: A">
                 </OldClasses>
-            </div>
-
-            <div id="exp">
-                <h2>experience</h2>
-                <Experiences
-                    title="CS 111 Course Assistant"
-                    info="Boston University, Boston, MA"
-                    dates="August, 2025 - Present"
-                    bullets={["Assist students in CS 111 labs and office hours with debugging and understanding course material.", 
-                    "Hold weekly office hours to help students with coursework and projects.", 
-                    "Grade assignments and provide constructive feedback to help students improve their coding skills."]}>
-                </Experiences>
-                <Experiences 
-                    title="Fitness Attendant" 
-                    info="FitRec, Boston, MA" 
-                    dates="January, 2024 - Present" 
-                    bullets={["Built relationships with clients to ensure their satisfaction with services provided.", 
-                    "Enforced rules and regulations and maintained safety and order by monitoring patrons' facility use.", 
-                    "Promoted healthy spirit, mind, and body philosophy."]}>
-                </Experiences>
-                <Experiences 
-                    title="Shift Leader" 
-                    info="Three Sisters, Providence, RI" 
-                    dates="June, 2021 - Ocotober, 2023" 
-                    bullets={["Trained new employees in job duties, safety procedures, and company policies.", 
-                    "Provided excellent customer service and developed strong relationships with customers.", 
-                    "Held team members accountable during shift by effectively coaching to improve performance."]}>
-                </Experiences>
-                <Experiences 
-                    title="Student" 
-                    info="Boston University, Boston, MA" 
-                    dates="January, 2024 - May, 2027" 
-                    bullets={["Currently pursuing a BA in Computer Science.", "3.98 GPA", "Member of Girls Who Code, Women in Computer Science, Hack4Impact and Forge Design Labs.", "Prominent coursework: Intro to Computer Science 1, Intro to Computer Science 2, Computer Systems, Combinatorics, and Linear Algebra."]}>
-                </Experiences>
             </div>
 
             <div id="githubchartcontainer">
