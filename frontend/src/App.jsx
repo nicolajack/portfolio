@@ -91,6 +91,14 @@ function App() {
 
             <div id="exp">
                 <h2>experience</h2>
+                <Experiences
+                    title="CS 111 Course Assistant"
+                    info="Boston University, Boston, MA"
+                    dates="August, 2025 - Present"
+                    bullets={["Assist students in CS 111 labs and office hours with debugging and understanding course material.", 
+                    "Hold weekly office hours to help students with coursework and projects.", 
+                    "Grade assignments and provide constructive feedback to help students improve their coding skills."]}>
+                </Experiences>
                 <Experiences 
                     title="Fitness Attendant" 
                     info="FitRec, Boston, MA" 
