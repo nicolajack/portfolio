@@ -41,6 +41,12 @@ function App() {
                     bullets={["Currently leading a team of 3 software engineers to build a full-stack web app for a nonprofit organization", "Oversee the development of the app and ensure it meets the needs of the nonprofit"]}>
                 </Experiences>
                 <Experiences
+                    title="Vice Director"
+                    info="BU Quantum, Boston University"
+                    dates="May, 2025 - Present"
+                    bullets={["Assist the Director in managing BU Quantum’s operations and events", "Build and maintain BU Quantum's website", "Design and run BU Quantum's social media accounts"]}>
+                </Experiences>
+                <Experiences
                     title="Bits Facilitator"
                     info="Girls Who Code, Boston University"
                     dates="March, 2025 - Present"
