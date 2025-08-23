@@ -22,6 +22,7 @@ function App() {
             <div id="projects">
                 <h2>projects</h2>
                 <Projects name="Dawn2Dusk" description="A full-stack web app displaying sunrise and sunset times around the world. This app was built using React and utilizes Javascript, HTML, and CSS. It also utilizes calls to the Google Gemini API, and React Leaflet to display maps." github="https://github.com/nicolajack/dawn2dusk"></Projects>
+                <Projects name="Study Buddy" description="A web app that helps students manage their assignments and deadlines. This app was built using Next.js and utilizes Javascript, HTML, and Tailwind CSS. This was built for my girlfriend after her favorite app, MyStudyLife, bit the dust." github="https://github.com/nicolajack/homeworktracker"></Projects>
                 <Projects name="Personal Portfolio" description="My personal website. You're seeing it right now! This website was built using React, Javascript, HTML, and CSS. It also utilizes the Google Gemini API for the chat feature. The backend utilizes MongoDB. This site also won a 50-person CSS competition." github="https://github.com/nicolajack/nicolajack.github.io"></Projects>
                 <Projects name="Rock, Paper, Scissors" description="A simple Next.js app using MediaPipe hand gesture recognition to allow the user to play rock paper scissors against a computer using their webcam. This project was built using Next.js, Javascript, HTML, and Tailwind CSS." github="https://github.com/nicolajack/RPSApp"></Projects>
             </div>
