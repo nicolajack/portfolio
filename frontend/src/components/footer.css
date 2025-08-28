@@ -4,7 +4,7 @@
     background-color: #282E4C;
     display: flex;
     width: 100%;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     height: 3.75rem;
     margin: auto;
@@ -13,4 +13,21 @@
     margin-top: 6.25rem;
 }
 
+.leftIcons {
+    display: flex;
+    gap: 1.25rem;
+}
 
+.rightIcons {
+    display: flex;
+    gap: 1.25rem;
+}
+
+#footerIcon {
+    font-size: 1.875rem;
+    transition: transform 0.3s ease;
+}
+
+#footerIcon:hover {
+    transform: scale(1.1);
+}
