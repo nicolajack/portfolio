@@ -1,9 +1,12 @@
 #navbar {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     background: #282E4C;
-    padding: 1.25rem 0;
+    padding: 1.25rem 2rem;
     align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    min-height: fit-content;
 }
 
 #darkModeToggle {
@@ -41,6 +44,11 @@
     font-style: normal;
     color:#EFE3CA;
     font-size: 3.75rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex-shrink: 1;
+    min-width: 0;
 }
 
 #name:hover {
@@ -48,4 +56,108 @@
     text-shadow: 0 0 5px rgba(193, 166, 105, 0.8);
     transition: color 0.2s;
     cursor: pointer;
+}
+
+#sideBar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: #282e4cb0;
+    backdrop-filter: blur(10px);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: .5rem;
+}
+
+#sideBar a {
+    width: 100%;
+    color: #E1CDA1;
+    text-decoration: none;
+    font-size: 1.875rem;
+    transition: color 0.2s;
+    font-family: Helvetica, sans-serif;
+    font-weight: 600;
+    padding: 1.25rem;
+    box-sizing: border-box;
+    text-align: right;
+}
+
+#sideBar a:hover {
+    color: #c1a569;
+}
+
+#sideBar #darkModeToggle {
+    width: 100%;
+    background: none !important;
+    border: none !important;
+    padding: 1.25rem;
+    box-sizing: border-box;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#sideBar #darkModeToggle:hover {
+    filter: brightness(0.8);
+    transition: filter 0.2s;
+}
+
+.menuButton {
+    display: none;
+    color: #E1CDA1;
+    text-decoration: none;
+    cursor: pointer;
+    margin-right: 0 !important;
+}
+
+.menuButton:hover {
+    filter: brightness(0.8);
+    transition: filter 0.2s;
+}
+
+#close:hover {
+    filter: brightness(0.7);
+    transition: filter 0.2s;
+}
+
+body.dark-mode #navbar, body.dark-mode #sideBar {
+    background-color: #697565ba;
+}
+
+@media (max-width: 880px) {
+    .hideOnMobile {
+        display: none;
+    }
+    .menuButton {
+        display: block;
+        margin-left: auto;
+    }
+    .menuButton:hover {
+        color: #c1a569;
+    }
+    #navbar h1 {
+        font-size: 2.5rem;
+    }
+    #navbar {
+        justify-content: space-between;
+        padding: 1.25rem 1rem;
+    }
+}
+
+@media (max-width: 400px) {
+    #sideBar {
+        width: 100%;
+    }
+    #navbar {
+        padding: 1rem;
+    }
+    #navbar h1 {
+        font-size: 2rem;
+    }
 }
