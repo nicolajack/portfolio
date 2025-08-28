@@ -10,7 +10,7 @@ function Profile() {
             <div id="profile-text">
                 <p>hello, i am</p>
                 <h2><i>n</i>ico jackso<i>n</i></h2>
-                <p>rising junior @ boston university</p>
+                <p>junior @ boston university</p>
                 <div className="icons">
                     <a target="_blank" href="https://www.linkedin.com/in/nicola-jackson-64b22833b/"><img id="linkedin-img" width="60" src={LinkedInIcon} /></a>
                     <a target="_blank" href="https://github.com/nicolajack"><img id="github-img" width="60" src={GithubIcon} /></a>
