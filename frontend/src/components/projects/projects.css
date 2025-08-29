@@ -34,3 +34,7 @@ button:hover .github-inline {
     color: #E0E1DD;
     font-family: Helvetica, sans-serif;
 }
+
+.project h4 {
+    font-weight: 900 !important;
+}
