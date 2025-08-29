@@ -106,3 +106,32 @@
     background-color: #D8BE87;
     color: #455b79;
 }
+
+@media (max-width: 768px) {
+    #profile {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 6rem;
+        margin-bottom: 6rem;
+        gap: 1rem;
+    }
+
+    #profile h2 {
+        font-size: 3.5rem;
+    }
+
+    #profile p {
+        font-size: 1.5rem;
+    }
+
+    #profilepic {
+        width: 200px;
+        height: 200px;
+    }
+
+    #contact, #resume {
+        width: 6rem;
+        height: 2.5rem;
+        font-size: 1rem;
+    }
+}
