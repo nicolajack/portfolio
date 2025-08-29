@@ -39,19 +39,19 @@ function About(){
                 <br/>
                 <h3>my skills</h3>
                 <div className="icons">
-                    <img width="60" src={CSS} alt="css" />
-                    <img width="60" src={HTML} alt="html" />
-                    <img width="60"src={JS} alt="js" />
-                    <img width="60" src={TS} alt="ts" />
-                    <img width="60" src={PY} alt="python" />
-                    <img width="60" src={C} alt="c" />
+                    <img id="icon" width="60" src={CSS} alt="css" />
+                    <img id="icon" width="60" src={HTML} alt="html" />
+                    <img id="icon" width="60" src={JS} alt="js" />
+                    <img id="icon" width="60" src={TS} alt="ts" />
+                    <img id="icon" width="60" src={PY} alt="python" />
+                    <img id="icon" width="60" src={C} alt="c" />
                 </div>
                 <br />
                 <h3>currently learning</h3>
                 <div className="icons">
-                    <img width="60" src={PANDAS} alt="pandas" />
-                    <img width="60" src={SQL} alt="sql" />
-                    <img width="60" src={NUMPY} alt="numpy" />
+                    <img id="icon" width="60" src={PANDAS} alt="pandas" />
+                    <img id="icon" width="60" src={SQL} alt="sql" />
+                    <img id="icon" width="60" src={NUMPY} alt="numpy" />
                 </div>
             </div>
         </div>

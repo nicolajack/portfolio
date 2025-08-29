@@ -15,6 +15,7 @@
     cursor: pointer;
     left: 0 !important;
     font-size: medium;
+    font-weight: bold;
     color: #E1CDA1;
     margin-top: 0;
     border-radius: .2rem;
@@ -26,4 +27,11 @@
 .toggler a:hover {
     background-color: #E1CDA1;
     color: #81859A;
+}
+
+@media (max-width: 768px) {
+    #icon {
+        width: 30px;
+        height: 30px;
+    }
 }
