@@ -1,9 +1,14 @@
+html {
+  height: 100%;
+}
+
 body {
   font-family: "instrument-serif", sans-serif;
   font-weight: 400;
   font-style: normal;
   background: #f3efe3;
   color: #D8BE87;
+  min-height: 100%;
 }
 
 #spacer {
@@ -282,4 +287,21 @@ body.dark-mode .footer {
   #githubchart {
     width: 100%;
   }
+}
+
+#mouseGradient {
+    background: #2c40a6;
+    opacity: 0.15;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    z-index: 0;
+    pointer-events: none;
+    filter: blur(30px);
+}
+
+body.dark-mode #mouseGradient {
+  background: #D8BE87;
 }

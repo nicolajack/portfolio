@@ -9,6 +9,7 @@
     color: #E1CDA1;
     background-color: #282E4C;
     border: none;
+    border-radius: 7px;
 }
 
 .project button:hover {

@@ -1,3 +1,4 @@
+import { useEffect, useRef } from 'react';
 import Navbar from './components/navbar/navbar'
 import Profile from './components/profile/profile'
 import Chat from './components/chat/chat'
@@ -11,9 +12,26 @@ import Footer from './components/footer'
 import './App.css'
 
 function App() {
-    
+    const mouseGradientRef = useRef(null);
+
+    useEffect(() => {
+        const move = mouseGradientRef.current;
+        const handlePointerMove = event => {
+            const { clientX, clientY } = event;
+            move.animate({
+                left: `${clientX}px`,
+                top: `${clientY}px`
+            }, { duration: 1000, fill: "forwards" });
+        };
+        document.body.addEventListener('pointermove', handlePointerMove);
+        return () => {
+            document.body.removeEventListener('pointermove', handlePointerMove);
+        };
+    }, []);
+
     return (
         <>
+            <div id="mouseGradient" ref={mouseGradientRef}></div>
             <Background />
             <Navbar />
             <Profile />
