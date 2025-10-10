@@ -12,6 +12,7 @@ import About from './components/about/about'
 import Footer from './components/footer'
 import './App.css'
 import dawn2duskImg from './assets/dawn2dusk.png';
+import GradualBlur from './components/gradualBlur';
 
 function App() {
     const mouseGradientRef = useRef(null);
@@ -164,6 +165,18 @@ function App() {
                 </div>
             </div>
             <Footer />
+            {/*
+            <GradualBlur
+                target="parent"
+                position="bottom"
+                height="6rem"
+                strength={2}
+                divCount={5}
+                curve="bezier"
+                exponential={true}
+                opacity={1}
+            />
+            */}
         </>
     )
 }
