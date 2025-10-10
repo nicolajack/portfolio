@@ -3,6 +3,7 @@ import Navbar from './components/navbar/navbar'
 import Profile from './components/profile/profile'
 import Chat from './components/chat/chat'
 import Projects from './components/projects/projects'
+import Projects2 from './components/projects2/projects2'
 import Background from './components/bg'
 import Experiences from './components/experiences/experiences'
 import Classes from './components/classes/classes'
@@ -10,6 +11,7 @@ import OldClasses from './components/classes/oldClasses'
 import About from './components/about/about'
 import Footer from './components/footer'
 import './App.css'
+import dawn2duskImg from './assets/dawn2dusk.png';
 
 function App() {
     const mouseGradientRef = useRef(null);
@@ -35,6 +37,13 @@ function App() {
             <Background />
             <Navbar />
             <Profile />
+            {/*
+            <div id="projects2">
+                <Projects2 name="Dawn2Dusk" description="a full stack app" github="https://github.com/nicolajack/dawn2dusk" deployLink="https://dawn2dusk.netlify.app/" image={dawn2duskImg}></Projects2>
+                <Projects2 name="Dawn2Dusk" description="a full stack app" github="https://github.com/nicolajack/dawn2dusk" deployLink="https://dawn2dusk.netlify.app/" image={dawn2duskImg}></Projects2>
+                <Projects2 name="Dawn2Dusk" description="a full stack app" github="https://github.com/nicolajack/dawn2dusk" deployLink="https://dawn2dusk.netlify.app/" image={dawn2duskImg}></Projects2>
+            </div>
+            */}
             <Chat/>
             <About />
             <div id="projects">

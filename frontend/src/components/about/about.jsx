@@ -8,7 +8,9 @@ import SQL from '../../assets/SQL.svg'
 import C from '../../assets/C.png'
 import PANDAS from '../../assets/pandas.png'
 import NUMPY from '../../assets/NumPy.png'
+import ReactLogo from '../../assets/atom.png'
 import { useState } from 'react'
+import LogoLoop from './logoloop.jsx';
 
 function About(){
     const [display, setDisplay] = useState('block')
@@ -24,6 +26,10 @@ function About(){
         }
     }
 
+    const techLogos = [
+        { node: ReactLogo, title: "React", href: "https://react.dev" },
+    ];
+
     return (
         <div id="about">
             <button className="toggler" onClick={toggle}>{buttonText}</button>
@@ -38,6 +44,22 @@ function About(){
                 </p>
                 <br/>
                 <h3>my skills</h3>
+                {/*
+                <div style={{ height: '200px', position: 'relative', overflow: 'hidden'}}>
+                    <LogoLoop
+                        logos={techLogos}
+                        speed={120}
+                        direction="left"
+                        logoHeight={48}
+                        gap={40}
+                        pauseOnHover
+                        scaleOnHover
+                        fadeOut
+                        fadeOutColor="#ffffff"
+                        ariaLabel="Technology partners"
+                    />
+                </div>
+                */}
                 <div className="icons">
                     <img id="icon" width="60" src={CSS} alt="css" />
                     <img id="icon" width="60" src={HTML} alt="html" />
