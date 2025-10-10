@@ -1,6 +1,7 @@
 .logoloop {
   position: relative;
   overflow-x: hidden;
+  overflow-y: visible;
 
   --logoloop-gap: 32px;
   --logoloop-logoHeight: 28px;
@@ -8,8 +9,8 @@
 }
 
 .logoloop--scale-hover {
-  padding-top: calc(var(--logoloop-logoHeight) * 0.1);
-  padding-bottom: calc(var(--logoloop-logoHeight) * 0.1);
+  padding-top: calc(var(--logoloop-logoHeight) * 0.15);
+  padding-bottom: calc(var(--logoloop-logoHeight) * 0.15);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -28,6 +29,9 @@
 .logoloop__list {
   display: flex;
   align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .logoloop__item {
@@ -35,6 +39,7 @@
   margin-right: var(--logoloop-gap);
   font-size: var(--logoloop-logoHeight);
   line-height: 1;
+  list-style: none;
 }
 
 .logoloop__item:last-child {

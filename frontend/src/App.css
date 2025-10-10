@@ -286,6 +286,14 @@ body.dark-mode .footer {
   color: #ECDFCC;
 }
 
+.logoloop {
+  --logoloop-fadeColor: #282E4C;
+}
+
+body.dark-mode .logoloop {
+  --logoloop-fadeColor: #697565;
+}
+
 .deploy {
     border-width: 0.15rem;
     padding: 0.35rem 0.6rem;
