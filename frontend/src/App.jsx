@@ -13,6 +13,7 @@ import Footer from './components/footer'
 import './App.css'
 import dawn2duskImg from './assets/dawn2dusk.png';
 import GradualBlur from './components/gradualBlur';
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
     const mouseGradientRef = useRef(null);
@@ -163,20 +164,9 @@ function App() {
                 <div id="chartcontainer">
                     <img src="http://ghchart.rshah.org/nicolajack" alt="nicolajack's Github chart" id="githubchart"/>
                 </div>
+                <Analytics />
             </div>
             <Footer />
-            {/*
-            <GradualBlur
-                target="parent"
-                position="bottom"
-                height="6rem"
-                strength={2}
-                divCount={5}
-                curve="bezier"
-                exponential={true}
-                opacity={1}
-            />
-            */}
         </>
     )
 }
