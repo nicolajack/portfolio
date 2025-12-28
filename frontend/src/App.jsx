@@ -3,7 +3,6 @@ import Navbar from './components/navbar/navbar'
 import Profile from './components/profile/profile'
 import Chat from './components/chat/chat'
 import Projects from './components/projects/projects'
-import Projects2 from './components/projects2/projects2'
 import Background from './components/bg'
 import Experiences from './components/experiences/experiences'
 import Classes from './components/classes/classes'
@@ -12,6 +11,10 @@ import About from './components/about/about'
 import Footer from './components/footer'
 import './App.css'
 import dawn2duskImg from './assets/dawn2dusk.png';
+import studyBuddyImg from './assets/studybuddy2.png';
+import portfolioImg from './assets/woahhmeta.png';
+import rpsImg from './assets/rpspreview.png';
+import examTimerImg from './assets/examTimerPreview.png'
 import { Analytics } from '@vercel/analytics/react';
 
 function App() {
@@ -61,21 +64,47 @@ function App() {
             <Background />
             <Navbar />
             <Profile />
-            {/*
-            <div id="projects2">
-                <Projects2 name="Dawn2Dusk" description="a full stack app" github="https://github.com/nicolajack/dawn2dusk" deployLink="https://dawn2dusk.netlify.app/" image={dawn2duskImg}></Projects2>
-                <Projects2 name="Dawn2Dusk" description="a full stack app" github="https://github.com/nicolajack/dawn2dusk" deployLink="https://dawn2dusk.netlify.app/" image={dawn2duskImg}></Projects2>
-                <Projects2 name="Dawn2Dusk" description="a full stack app" github="https://github.com/nicolajack/dawn2dusk" deployLink="https://dawn2dusk.netlify.app/" image={dawn2duskImg}></Projects2>
-            </div>
-            */}
             <Chat/>
             <About />
             <div id="projects">
                 <h2>projects</h2>
-                <Projects name="Dawn2Dusk" description="A full-stack web app displaying sunrise and sunset times around the world. This app was built using React and utilizes Javascript, HTML, and CSS. It also utilizes calls to the Google Gemini API, and React Leaflet to display maps." github="https://github.com/nicolajack/dawn2dusk" deployLink="https://dawn2dusk.netlify.app/"></Projects>
-                <Projects name="Study Buddy" description="A web app that helps students manage their assignments and deadlines. This app was built using Next.js and utilizes Javascript, HTML, and Tailwind CSS. This was built for my girlfriend after her favorite app, MyStudyLife, bit the dust." github="https://github.com/nicolajack/homeworktracker" deployLink="https://homeworktracker-eight.vercel.app/"></Projects>
-                <Projects name="Personal Portfolio" description="My personal website. You're seeing it right now! This website was built using React, Javascript, HTML, and CSS. It also utilizes the Google Gemini API for the chat feature. The backend utilizes MongoDB. This site also won a 50-person CSS competition." github="https://github.com/nicolajack/nicolajack.github.io" deployLink="https://www.nicojackson.me/"></Projects>
-                <Projects name="Rock, Paper, Scissors" description="A simple Next.js app using MediaPipe hand gesture recognition to allow the user to play rock paper scissors against a computer using their webcam. This project was built using Next.js, Javascript, HTML, and Tailwind CSS." github="https://github.com/nicolajack/RPSApp" deployLink="https://rpsncj.netlify.app/"></Projects>
+                <div className="projects-grid">
+                    <Projects 
+                        name="Dawn2Dusk" 
+                        description="A full-stack web app displaying sunrise and sunset times around the world. Built with React, Google Gemini API, and React Leaflet." 
+                        github="https://github.com/nicolajack/dawn2dusk" 
+                        deployLink="https://dawn2dusk.netlify.app/"
+                        image={dawn2duskImg}
+                    />
+                    <Projects 
+                        name="Study Buddy" 
+                        description="A web app that helps students manage their assignments and deadlines. Built with Next.js and Tailwind CSS." 
+                        github="https://github.com/nicolajack/homeworktracker" 
+                        deployLink="https://homeworktracker-eight.vercel.app/"
+                        image={studyBuddyImg}
+                    />
+                    <Projects 
+                        name="Personal Portfolio" 
+                        description="My personal website featuring a modern design, Google Gemini API integration, and MongoDB backend. Winner of a 50-person CSS competition." 
+                        github="https://github.com/nicolajack/nicolajack.github.io" 
+                        deployLink="https://www.nicojackson.me/"
+                        image={portfolioImg}
+                    />
+                    <Projects 
+                        name="Rock, Paper, Scissors" 
+                        description="A Next.js app using MediaPipe hand gesture recognition to play rock paper scissors using your webcam." 
+                        github="https://github.com/nicolajack/RPSApp" 
+                        deployLink="https://rpsncj.netlify.app/"
+                        image={rpsImg}
+                    />
+                    <Projects 
+                        name="Exam Timer" 
+                        description="A simple web app to display time left in an exam while displaying relevant notes/reminders." 
+                        github="https://github.com/nicolajack/examTimer" 
+                        deployLink="https://exam-timer-beta.vercel.app/"
+                        image={examTimerImg}
+                    />
+                </div>
             </div>
 
             <div id="exp">
@@ -148,13 +177,24 @@ function App() {
 
             <div id="exp">
                 <h2>relevant coursework</h2>
-                <h3 id="sem2">fall 2025</h3>
+                <h3 id="sem2">spring 2026</h3>
                 <Classes
+                    title="CS 460: Introduction to Database Systems"
+                    info="Examines entity-relationship, relational, and object-oriented data models; commercial query languages: SQL, relational algebra, relational calculus, and QBE; file organization, indexing and hashing, query optimization, transaction processing, concurrency control and recovery,integrity, and security."
+                    title2="CS 411: Software Engineering"
+                    info2="Topics may include software tools, software testing methodologies, retrofitting, regression testing, structured design and structured programming, software characteristics and quality, complexity, entropy, deadlock, fault tolerance, formal proofs of program correctness, chief program teams, and structured walk-throughs."
+                    title3="CS 351: Distributed Systems"
+                    info3="Covers fundamental concepts of distributed computing (logical clocks, causal order, snapshots, consensus, atomic commit), communication and synchronization primitives, concurrency control, task and data parallelism, data consistency, replication, and fault tolerance.">
+                </Classes>
+                <OldClasses
+                    sem="fall 2025"
                     title="CS 330: Introduction to Analysis of Algorithms"
                     info="Examines the basic principles of algorithm design and analysis; asymptotic analysis; graph algorithms; greedy algorithms; dynamic programming; network flows; polynomial- time reductions; NP-hard and NP-complete problems."
+                    grade="grade: A"
                     title2="CS 237: Probability in Computing"
-                    info2="Introduction to basic probabilistic concepts and methods used in computer science. Develops an understanding of the crucial role played by randomness in computing, both as a powerful tool and as a challenge to confront and analyze. Emphasis on rigorous reasoning, analysis, and algorithmic thinking.">
-                </Classes>
+                    info2="Introduction to basic probabilistic concepts and methods used in computer science. Develops an understanding of the crucial role played by randomness in computing, both as a powerful tool and as a challenge to confront and analyze. Emphasis on rigorous reasoning, analysis, and algorithmic thinking."
+                    grade2="grade: A">
+                </OldClasses>
                 <OldClasses
                     sem="spring 2025"
                     title="CS 210: Computer Systems"
