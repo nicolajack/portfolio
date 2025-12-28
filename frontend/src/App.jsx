@@ -12,11 +12,33 @@ import About from './components/about/about'
 import Footer from './components/footer'
 import './App.css'
 import dawn2duskImg from './assets/dawn2dusk.png';
-import GradualBlur from './components/gradualBlur';
 import { Analytics } from '@vercel/analytics/react';
 
 function App() {
     const mouseGradientRef = useRef(null);
+
+    // device dark/light mode syncing
+    useEffect(() => {
+        const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (prefersDarkMode) {
+            document.body.classList.add('dark-mode');
+        }
+
+        const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+        const handleChange = (e) => {
+            if (e.matches) {
+                document.body.classList.add('dark-mode');
+            } else {
+                document.body.classList.remove('dark-mode');
+            }
+        };
+
+        mediaQuery.addEventListener('change', handleChange);
+
+        return () => {
+            mediaQuery.removeEventListener('change', handleChange);
+        };
+    }, []);
 
     useEffect(() => {
         const move = mouseGradientRef.current;
