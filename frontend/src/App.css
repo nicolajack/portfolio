@@ -323,3 +323,7 @@ body.dark-mode .logoloop {
 body.dark-mode #mouseGradient {
   background: #D8BE87;
 }
+
+body.dark-mode #exp h3 {
+  color: #D8BE87;
+}

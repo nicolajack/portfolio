@@ -15,6 +15,7 @@ import studyBuddyImg from './assets/studybuddy2.png';
 import portfolioImg from './assets/woahhmeta.png';
 import rpsImg from './assets/rpspreview.png';
 import examTimerImg from './assets/examTimerPreview.png'
+import tamagitImg from './assets/tamagitPreview.png'
 import { Analytics } from '@vercel/analytics/react';
 
 function App() {
@@ -98,6 +99,13 @@ function App() {
                         image={rpsImg}
                     />
                     <Projects 
+                        name="Tamagit" 
+                        description="A virtual pet chrome extension that integrates with GitHub to level up your pet based on your coding activity." 
+                        github="https://github.com/nicolajack/tamagit" 
+                        deployLink="https://github.com/nicolajack/tamagit"
+                        image={tamagitImg}
+                    />
+                    <Projects 
                         name="Exam Timer" 
                         description="A simple web app to display time left in an exam while displaying relevant notes/reminders." 
                         github="https://github.com/nicolajack/examTimer" 
@@ -110,16 +118,10 @@ function App() {
             <div id="exp">
                 <h2>leadership</h2>
                 <Experiences
-                    title="Marketing Director"
+                    title="Director of Engineering"
                     info="Hack4Impact, Boston University"
-                    dates="May, 2025 - Present"
-                    bullets={["Oversee Hack4Impact’s marketing and outreach efforts", "Manage Hack4Impact’s social media accounts and website", "Collaborate with Hack4Impact’s Executive Board to foster an inclusive environment"]}>
-                </Experiences>
-                <Experiences
-                    title="Lead SWE"
-                    info="Impact Team, Hack4Impact, Boston University"
-                    dates="May, 2025 - Present"
-                    bullets={["Currently leading a team of 3 software engineers to build a full-stack web app for a nonprofit organization", "Oversee the development of the app and ensure it meets the needs of the nonprofit"]}>
+                    dates="December, 2025 - Present"
+                    bullets={["Lead BU Hack4Impact’s Impact Program, managing 3-4 teams of student interns working on web development projects", "Oversee all ongoing projects and ensure successful delivery to nonprofit partners", "Mentor and support software engineers in their professional development"]}>
                 </Experiences>
                 <Experiences
                     title="Vice Director"
@@ -128,15 +130,27 @@ function App() {
                     bullets={["Assist the Director in managing BU Quantum’s operations and events", "Build and maintain BU Quantum's website", "Design and run BU Quantum's social media accounts"]}>
                 </Experiences>
                 <Experiences
+                    title="Marketing Director"
+                    info="Hack4Impact, Boston University"
+                    dates="May, 2025 - December, 2025"
+                    bullets={["Oversaw Hack4Impact’s marketing and outreach efforts", "Managed Hack4Impact’s social media accounts and website", "Collaborated with Hack4Impact’s Executive Board to foster an inclusive environment"]}>
+                </Experiences>
+                <Experiences
+                    title="Lead SWE"
+                    info="Impact Team, Hack4Impact, Boston University"
+                    dates="May, 2025 - December, 2025"
+                    bullets={["Led a team of 3 software engineers to build a full-stack web app for a nonprofit organization", "Oversaw the development of the app and ensured it met the needs of the nonprofit"]}>
+                </Experiences>
+                <Experiences
                     title="Bits Facilitator"
                     info="Girls Who Code, Boston University"
-                    dates="March, 2025 - Present"
+                    dates="March, 2025 - December, 2025"
                     bullets={["Participated in Boston University’s Girls Who Code Bits and Bytes program", "Taught young girls in grades 3rd to 5th the basics of coding in Python and Scratch", "Engaged with students and modeled positive, inclusive language and behavior"]}>
                 </Experiences>
                 <Experiences
                     title="Website Developer"
                     info="Pinky Toe Paper, Boston University"
-                    dates="March, 2025 - Present"
+                    dates="March, 2025 - December, 2025"
                     bullets={["Co-Website Developer for Boston University’s intersectional-feminist satire publication, Pinky Toe Paper", "Handle front-end website development tasks", "Collaborate with Pinky Toe’s Executive Board to foster an inclusive publication"]}>
                 </Experiences>
             </div>
@@ -154,7 +168,7 @@ function App() {
                 <Experiences 
                     title="Fitness Attendant" 
                     info="FitRec, Boston, MA" 
-                    dates="January, 2024 - Present" 
+                    dates="January, 2024 - September, 2025" 
                     bullets={["Built relationships with clients to ensure their satisfaction with services provided.", 
                     "Enforced rules and regulations and maintained safety and order by monitoring patrons' facility use.", 
                     "Promoted healthy spirit, mind, and body philosophy."]}>
@@ -162,7 +176,7 @@ function App() {
                 <Experiences 
                     title="Shift Leader" 
                     info="Three Sisters, Providence, RI" 
-                    dates="June, 2021 - Ocotober, 2023" 
+                    dates="June, 2021 - October, 2023" 
                     bullets={["Trained new employees in job duties, safety procedures, and company policies.", 
                     "Provided excellent customer service and developed strong relationships with customers.", 
                     "Held team members accountable during shift by effectively coaching to improve performance."]}>
@@ -171,7 +185,7 @@ function App() {
                     title="Student" 
                     info="Boston University, Boston, MA" 
                     dates="January, 2024 - May, 2027" 
-                    bullets={["Currently pursuing a BA in Computer Science.", "3.98 GPA", "Member of Girls Who Code, Women in Computer Science, Hack4Impact and Forge Design Labs.", "Prominent coursework: Intro to Computer Science 1, Intro to Computer Science 2, Computer Systems, Combinatorics, and Linear Algebra."]}>
+                    bullets={["Currently pursuing a BA in Computer Science.", "3.98 GPA", "Member of Girls Who Code, Women in Computer Science, Hack4Impact and Forge Design Labs.", "Prominent coursework: Intro to CS 1, Intro to CS 2, Computer Systems, Combinatorics, Linear Algebra, Geometric Algorithms, Probability in Computing, Analysis of Algorithms."]}>
                 </Experiences>
             </div>
 
