@@ -12,7 +12,7 @@ import Footer from './components/footer'
 import './App.css'
 import dawn2duskImg from './assets/dawn2dusk.png';
 import studyBuddyImg from './assets/studybuddy2.png';
-import portfolioImg from './assets/woahhmeta.png';
+import h4isiteImg from './assets/h4isite.png';
 import rpsImg from './assets/rpspreview.png';
 import examTimerImg from './assets/examTimerPreview.png'
 import tamagitImg from './assets/tamagitPreview.png'
@@ -104,11 +104,11 @@ function App() {
                         image={studyBuddyImg}
                     />
                     <Projects 
-                        name="Personal Portfolio" 
-                        description="My personal website featuring a modern design, Google Gemini API integration, and MongoDB backend. Winner of a 50-person CSS competition." 
-                        github="https://github.com/nicolajack/nicolajack.github.io" 
-                        deployLink="https://www.nicojackson.me/"
-                        image={portfolioImg}
+                        name="Hack4Impact BU" 
+                        description="Redesigned the BU Chapter Hack4Impact website, adding improved functionality." 
+                        github="https://github.com/nicolajack/hack4impact-bu-website" 
+                        deployLink="https://bu.hack4impact.org/"
+                        image={h4isiteImg}
                     />
                     <Projects 
                         name="Rock, Paper, Scissors" 
