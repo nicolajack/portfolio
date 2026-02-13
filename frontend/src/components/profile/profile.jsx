@@ -5,7 +5,7 @@ import LinkedInIcon from '../../assets/linkedin.svg'
 
 function Profile() {
     return (
-        <div id="profile" class="fadeInUp-animation">
+        <div id="profile" className="fadeInUp-animation">
             <div><img id="profilepic" width ="350" src={ProfileIcon} /></div>
             <div id="profile-text">
                 <p>hello, i am</p>

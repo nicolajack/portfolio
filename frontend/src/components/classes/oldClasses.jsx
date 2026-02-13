@@ -2,8 +2,8 @@ import { useState } from 'react'
 import './classes.css'
 
 function OldClasses({sem, title, info, grade, title2, info2, grade2}) {
-    const [display, setDisplay] = useState('block')
-    const [buttonText, setButtonText] = useState('hide')
+    const [display, setDisplay] = useState('none')
+    const [buttonText, setButtonText] = useState('show')
 
     function toggle() {
         if (display == 'none') {

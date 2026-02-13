@@ -59,6 +59,25 @@ function App() {
         };
     }, []);
 
+    // Scroll reveal animation using Intersection Observer
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            },
+            { threshold: 0.1 }
+        );
+
+        const elements = document.querySelectorAll('.scroll-reveal');
+        elements.forEach((el) => observer.observe(el));
+
+        return () => observer.disconnect();
+    }, []);
+
     return (
         <>
             <div id="mouseGradient" ref={mouseGradientRef}></div>
@@ -67,7 +86,7 @@ function App() {
             <Profile />
             <Chat/>
             <About />
-            <div id="projects">
+            <div id="projects" className="scroll-reveal">
                 <h2>projects</h2>
                 <div className="projects-grid">
                     <Projects 
@@ -115,7 +134,7 @@ function App() {
                 </div>
             </div>
 
-            <div id="exp">
+            <div id="exp" className="scroll-reveal">
                 <h2>leadership</h2>
                 <Experiences
                     title="Director of Engineering"
@@ -155,7 +174,7 @@ function App() {
                 </Experiences>
             </div>
 
-            <div id="exp">
+            <div id="exp" className="scroll-reveal">
                 <h2>experience</h2>
                 <Experiences
                     title="CS 111 Course Assistant"
@@ -189,7 +208,7 @@ function App() {
                 </Experiences>
             </div>
 
-            <div id="exp">
+            <div id="exp" className="scroll-reveal">
                 <h2>relevant coursework</h2>
                 <h3 id="sem2">spring 2026</h3>
                 <Classes
@@ -235,10 +254,10 @@ function App() {
                 </OldClasses>
             </div>
 
-            <div id="githubchartcontainer">
+            <div id="githubchartcontainer" className="scroll-reveal">
                 <h2>github contributions</h2>
                 <div id="chartcontainer">
-                    <img src="http://ghchart.rshah.org/nicolajack" alt="nicolajack's Github chart" id="githubchart"/>
+                    <img loading="lazy" src="http://ghchart.rshah.org/nicolajack" alt="nicolajack's Github chart" id="githubchart"/>
                 </div>
                 <Analytics />
             </div>
