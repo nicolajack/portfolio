@@ -27,7 +27,7 @@ function About(){
             title: 'Charm',
             subtitle: 'Clairo',
             progress: 85,
-            link: 'https://open.spotify.com/album/1VjWQYMHNqWMbIuvMFtMxh',
+            link: 'https://open.spotify.com/album/1KNUCVXgIxKUGiuEB8eG0i?si=IbGXjwfaTumflsT-kgaIsA',
             image: charm,
         },
     ]
