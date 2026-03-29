@@ -84,8 +84,8 @@ function App() {
             <Background />
             <Navbar />
             <Profile />
-            <Chat/>
             <About />
+            <Chat/>
             <div id="projects" className="scroll-reveal">
                 <h2>projects</h2>
                 <div className="projects-grid">
