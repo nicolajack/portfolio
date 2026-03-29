@@ -11,7 +11,7 @@ function About(){
             title: 'Atmosphere',
             subtitle: 'Taylor Jenkins Reid',
             progress: 10,
-            link: 'https://www.goodreads.com/book/show/216442194-atmosphere',
+            link: 'https://www.goodreads.com/book/show/220817728-atmosphere',
             image: atmosphere,
         },
         {
