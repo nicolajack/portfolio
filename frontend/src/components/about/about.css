@@ -238,15 +238,15 @@ body.dark-mode .shelf-category {
 }
 
 .shelf-cover-reading {
-    background: linear-gradient(155deg, #E8A87C 0%, #C45D3E 55%, #6B2A1A 100%);
+    background: linear-gradient(155deg, #a9d4e8 0%, #78a8bf 55%, #5388a0 100%);
 }
 
 .shelf-cover-watching {
-    background: linear-gradient(155deg, #B0A9E8 0%, #6558B8 55%, #2E2563 100%);
+    background: linear-gradient(155deg, #a9d4e8 0%, #78a8bf 55%, #5388a0 100%);
 }
 
 .shelf-cover-listening {
-    background: linear-gradient(155deg, #7CCFB3 0%, #2E8B6E 55%, #0C3D2F 100%);
+    background: linear-gradient(155deg, #a9d4e8 0%, #78a8bf 55%, #5388a0 100%);
 }
 
 /* Title & subtitle */
@@ -290,15 +290,15 @@ body.dark-mode .shelf-item-subtitle {
 }
 
 .shelf-fill-reading {
-    background-color: #C45D3E;
+    background-color: #78a8bf;
 }
 
 .shelf-fill-watching {
-    background-color: #6558B8;
+    background-color: #78a8bf;
 }
 
 .shelf-fill-listening {
-    background-color: #2E8B6E;
+    background-color: #78a8bf;
 }
 
 body.dark-mode .shelf-progress {
