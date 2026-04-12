@@ -46,13 +46,31 @@ const model = genAI.getGenerativeModel({
 
 app.post('/chat', async (req, res) => {
     const userInput = req.body.userInput
+    
+    if (!userInput || typeof userInput !== 'string' || userInput.trim() === '') {
+        console.error('Invalid input:', userInput)
+        return res.status(400).json({
+            message: 'Bad Request',
+            error: 'userInput is required and must be a non-empty string'
+        })
+    }
+    
     let responseMessage
     try {
+        console.log('Sending to Gemini API:', userInput)
         const result = await model.generateContent(userInput)
         responseMessage = result.response.text()
     } catch(e) {
-        console.error('Gemini API error:', e.message || e)
+        console.error('Gemini API error:', e.status || e.statusCode)
+        console.error('Error message:', e.message)
+        console.error('Full error:', e)
         responseMessage = 'Oops, something went wrong!'
+        
+        return res.status(400).json({
+            message: responseMessage,
+            error: e.message,
+            status: e.status || e.statusCode
+        })
     }
     res.json({
         message: responseMessage,
