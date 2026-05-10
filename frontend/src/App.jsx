@@ -14,7 +14,7 @@ import dawn2duskImg from './assets/dawn2dusk.png';
 import studyBuddyImg from './assets/studybuddy2.png';
 import h4isiteImg from './assets/h4isite.png';
 import rpsImg from './assets/rpspreview.png';
-import examTimerImg from './assets/examTimerPreview.png'
+import spotifySQLImg from './assets/spotifySQL.png'
 import tamagitImg from './assets/tamagitPreview.png'
 import { Analytics } from '@vercel/analytics/react';
 
@@ -125,11 +125,11 @@ function App() {
                         image={tamagitImg}
                     />
                     <Projects 
-                        name="Exam Timer" 
+                        name="SQL Spotify Stats" 
                         description="A simple web app to display time left in an exam while displaying relevant notes/reminders." 
-                        github="https://github.com/nicolajack/examTimer" 
-                        deployLink="https://exam-timer-beta.vercel.app/"
-                        image={examTimerImg}
+                        github="https://github.com/nicolajack/spotifySQLStats" 
+                        deployLink="https://github.com/nicolajack/spotifySQLStats"
+                        image={spotifySQLImg}
                     />
                 </div>
             </div>
@@ -204,21 +204,34 @@ function App() {
                     title="Student" 
                     info="Boston University, Boston, MA" 
                     dates="January, 2024 - May, 2027" 
-                    bullets={["Currently pursuing a BA in Computer Science.", "3.98 GPA", "Member of Girls Who Code, Women in Computer Science, Hack4Impact and Forge Design Labs.", "Prominent coursework: Intro to CS 1, Intro to CS 2, Computer Systems, Combinatorics, Linear Algebra, Geometric Algorithms, Probability in Computing, Analysis of Algorithms."]}>
+                    bullets={["Currently pursuing a BA in Computer Science.", "3.99 GPA", "Member of Girls Who Code, Women in Computer Science, Hack4Impact and Forge Design Labs.", "Prominent coursework: Intro to CS 1 & 2, Computer Systems, Combinatorics, Linear Algebra, Geometric Algorithms, Probability in Computing, Analysis of Algorithms, Distributed Systems, Database Systems."]}>
                 </Experiences>
             </div>
 
             <div id="exp" className="scroll-reveal">
                 <h2>relevant coursework</h2>
-                <h3 id="sem2">spring 2026</h3>
+                <h3 id="sem2">fall 2026</h3>
                 <Classes
+                    title="CS 357: Introduction to Information Security"
+                    info="Provides basic concepts needed for understanding information security. Discusses vulnerabilities, design principles, basic algorithms, security definitions, and analytical methods. Covers system security, network security, web security, cryptography, and data privacy. Also addresses social, ethical, and policy aspects of security."
+                    title2="CS 320: Concepts of Programming Languages"
+                    info2="Concepts involved in the design of programming languages. Bindings, argument transmission, and control structures. Environments: compile-time, load-time, and run-time. Interpreters."
+                    title3="CS 115: Academic Writing in Computer Science"
+                    info3="Writing Intensive unit through the topic of computer science. Students engage with readings and discussions in current computer science issues. The course focuses on teaching critical reading, creating a strong argument, and engaging with a variety of sources."
+                >
+                </Classes>
+                <OldClasses
+                    sem="spring 2026"
                     title="CS 460: Introduction to Database Systems"
                     info="Examines entity-relationship, relational, and object-oriented data models; commercial query languages: SQL, relational algebra, relational calculus, and QBE; file organization, indexing and hashing, query optimization, transaction processing, concurrency control and recovery,integrity, and security."
+                    grade="grade: A"
                     title2="CS 411: Software Engineering"
                     info2="Topics may include software tools, software testing methodologies, retrofitting, regression testing, structured design and structured programming, software characteristics and quality, complexity, entropy, deadlock, fault tolerance, formal proofs of program correctness, chief program teams, and structured walk-throughs."
+                    grade2="grade: A"
                     title3="CS 351: Distributed Systems"
-                    info3="Covers fundamental concepts of distributed computing (logical clocks, causal order, snapshots, consensus, atomic commit), communication and synchronization primitives, concurrency control, task and data parallelism, data consistency, replication, and fault tolerance.">
-                </Classes>
+                    info3="Covers fundamental concepts of distributed computing (logical clocks, causal order, snapshots, consensus, atomic commit), communication and synchronization primitives, concurrency control, task and data parallelism, data consistency, replication, and fault tolerance."
+                    grade3="grade: A">
+                </OldClasses>
                 <OldClasses
                     sem="fall 2025"
                     title="CS 330: Introduction to Analysis of Algorithms"
