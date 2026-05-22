@@ -99,7 +99,7 @@ function App() {
                     />
                     <Projects 
                         name="Bank of Gotham AI Assistant" 
-                        description="An intelligent chatbot assistant for that helps customers with banking needs. Built with Python, Ollama, and Streamlit." 
+                        description="An intelligent chatbot assistant that helps customers with banking needs. Built with Python, Ollama, and Streamlit." 
                         github="https://github.com/nicolajack/bankBot" 
                         deployLink="https://github.com/nicolajack/bankBot"
                         image={bankBot}
