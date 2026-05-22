@@ -6,7 +6,7 @@ function Footer() {
     return (
         <div className="footer">
             <div className="leftIcons">
-                <a target="_blank" href="https://www.linkedin.com/in/nicola-jackson-64b22833b/"><img className="footerIcon" width="60" src={LinkedInIcon} /></a>
+                <a target="_blank" href="https://www.linkedin.com/in/nicola-c-jackson/"><img className="footerIcon" width="60" src={LinkedInIcon} /></a>
                 <a target="_blank" href="https://github.com/nicolajack"><img className="footerIcon" width="60" src={GithubIcon} /></a>
             </div>
             <h2>*designed and built by nico jackson</h2>
