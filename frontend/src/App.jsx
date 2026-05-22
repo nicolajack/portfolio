@@ -16,6 +16,7 @@ import h4isiteImg from './assets/h4isite.png';
 import rpsImg from './assets/rpspreview.png';
 import spotifySQLImg from './assets/spotifySQL.png'
 import tamagitImg from './assets/tamagitPreview.png'
+import bankBot from './assets/bankBot.png'
 import { Analytics } from '@vercel/analytics/react';
 
 function App() {
@@ -90,13 +91,6 @@ function App() {
                 <h2>projects</h2>
                 <div className="projects-grid">
                     <Projects 
-                        name="Dawn2Dusk" 
-                        description="A full-stack web app displaying sunrise and sunset times around the world. Built with React, Google Gemini API, and React Leaflet." 
-                        github="https://github.com/nicolajack/dawn2dusk" 
-                        deployLink="https://dawn2dusk.netlify.app/"
-                        image={dawn2duskImg}
-                    />
-                    <Projects 
                         name="Study Buddy" 
                         description="A web app that helps students manage their assignments and deadlines. Built with Next.js and Tailwind CSS." 
                         github="https://github.com/nicolajack/homeworktracker" 
@@ -104,11 +98,18 @@ function App() {
                         image={studyBuddyImg}
                     />
                     <Projects 
-                        name="Hack4Impact BU" 
-                        description="Redesigned the BU Chapter Hack4Impact website, adding improved functionality." 
-                        github="https://github.com/nicolajack/hack4impact-bu-website" 
-                        deployLink="https://bu.hack4impact.org/"
-                        image={h4isiteImg}
+                        name="Bank of Gotham AI Assistant" 
+                        description="An intelligent chatbot assistant for that helps customers with banking needs. Built with Python, Ollama, and Streamlit." 
+                        github="https://github.com/nicolajack/bankBot" 
+                        deployLink="https://github.com/nicolajack/bankBot"
+                        image={bankBot}
+                    />
+                    <Projects 
+                        name="Dawn2Dusk" 
+                        description="A full-stack web app displaying sunrise and sunset times around the world. Built with React, Google Gemini API, and React Leaflet." 
+                        github="https://github.com/nicolajack/dawn2dusk" 
+                        deployLink="https://dawn2dusk.netlify.app/"
+                        image={dawn2duskImg}
                     />
                     <Projects 
                         name="Rock, Paper, Scissors" 
