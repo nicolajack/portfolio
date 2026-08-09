@@ -1,4 +1,3 @@
-import './navbar.css'
 import darkMode from '../../assets/dark-mode.png'
 
 function Navbar() {

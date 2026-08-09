@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import './classes.css'
 
 function OldClasses({sem, title, info, grade, title2, info2, grade2}) {
     const [display, setDisplay] = useState('none')

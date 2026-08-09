@@ -1,4 +1,3 @@
-import './background.css'
 
 function Background() {
     return (

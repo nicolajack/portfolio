@@ -1,4 +1,3 @@
-import './projects2.css'
 
 function Projects2({ photo, name, description, github, deployLink }) {
     return (

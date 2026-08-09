@@ -17,7 +17,6 @@ import rpsImg from './assets/rpspreview.png';
 import spotifySQLImg from './assets/spotifySQL.png'
 import tamagitImg from './assets/tamagitPreview.png'
 import bankBot from './assets/bankBot.png'
-import { Analytics } from '@vercel/analytics/react';
 
 function App() {
     const mouseGradientRef = useRef(null);
@@ -273,7 +272,6 @@ function App() {
                 <div id="chartcontainer">
                     <img loading="lazy" src="http://ghchart.rshah.org/nicolajack" alt="nicolajack's Github chart" id="githubchart"/>
                 </div>
-                <Analytics />
             </div>
             <Footer />
         </>

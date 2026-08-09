@@ -1,4 +1,3 @@
-import './about.css'
 import atmosphere from '../../assets/atmosphere.jpeg'
 import watchingF1 from '../../assets/watchingf1.jpeg'
 import charm from '../../assets/charm.png'

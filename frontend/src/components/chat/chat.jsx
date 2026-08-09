@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import {useEffect } from 'react'
-import './chat.css'
 
 function Chat() {
     const [messages, setMessages] = useState([])

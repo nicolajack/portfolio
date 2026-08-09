@@ -1,4 +1,3 @@
-import './classes.css';
 
 function Classes({title, info, title2, info2, title3, info3}) {
     return (

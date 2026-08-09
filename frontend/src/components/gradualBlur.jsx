@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState, useMemo } from 'react';
 import * as math from 'mathjs';
 
-import './gradualBlur.css';
 
 const DEFAULT_CONFIG = {
   position: 'bottom',
