@@ -1,7 +1,7 @@
 
 function Background() {
     return (
-        <div class="bg">
+        <div className="bg">
             
         </div>
     )

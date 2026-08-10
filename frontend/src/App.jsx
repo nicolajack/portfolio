@@ -2,11 +2,12 @@ import { useEffect, useRef } from 'react';
 import Navbar from './components/navbar/navbar'
 import Profile from './components/profile/profile'
 import Chat from './components/chat/chat'
-import Projects from './components/projects/projects'
+import ProjectCard from './components/projects/projects'
 import Background from './components/bg'
-import Experiences from './components/experiences/experiences'
+import ExperienceCard from './components/experiences/experiences'
 import Classes from './components/classes/classes'
 import OldClasses from './components/classes/oldClasses'
+import SemesterCard from './components/classes/semesterCard'
 import About from './components/about/about'
 import Footer from './components/footer'
 import './App.css'
@@ -14,9 +15,10 @@ import dawn2duskImg from './assets/dawn2dusk.png';
 import studyBuddyImg from './assets/studybuddy2.png';
 import h4isiteImg from './assets/h4isite.png';
 import rpsImg from './assets/rpspreview.png';
-import spotifySQLImg from './assets/spotifySQL.png'
-import tamagitImg from './assets/tamagitPreview.png'
-import bankBot from './assets/bankBot.png'
+import spotifySQLImg from './assets/spotifySQL.png';
+import tamagitImg from './assets/tamagitPreview.png';
+import bankBot from './assets/bankBot.png';
+import {FaFolderOpen, FaBriefcase, FaPeopleGroup, FaGraduationCap, FaGithub, FaCodeCommit, FaArrowUpRightFromSquare} from 'react-icons/fa6';
 
 function App() {
     const mouseGradientRef = useRef(null);
@@ -85,194 +87,343 @@ function App() {
             <Navbar />
             <Profile />
             <About />
-            <Chat/>
+            {/* commenting out while fixing <Chat/> */}
             <div id="projects" className="scroll-reveal">
-                <h2>projects</h2>
+                <div className="section-header">
+                    <span className="section-eyebrow">
+                        <FaFolderOpen /> selected works
+                    </span>
+                    <h2 className="section-title">projects</h2>
+                </div>
+
                 <div className="projects-grid">
-                    <Projects 
+                    <ProjectCard 
                         name="Study Buddy" 
-                        description="A web app that helps students manage their assignments and deadlines. Built with Next.js and Tailwind CSS." 
+                        category="Full Stack"
+                        description="A web app that helps students manage their assignments and deadlines seamlessly." 
+                        tags={['Next.js', 'Tailwind CSS', 'TypeScript']}
                         github="https://github.com/nicolajack/homeworktracker" 
                         deployLink="https://homeworktracker-eight.vercel.app/"
                         image={studyBuddyImg}
+                        featured={true}
                     />
-                    <Projects 
+                    <ProjectCard 
                         name="Bank of Gotham AI Assistant" 
-                        description="An intelligent chatbot assistant that helps customers with banking needs. Built with Python, Ollama, and Streamlit." 
+                        category="AI / LLM"
+                        description="An intelligent chatbot assistant that helps customers with banking needs and account queries." 
+                        tags={['Python', 'Ollama', 'Streamlit']}
                         github="https://github.com/nicolajack/bankBot" 
-                        deployLink="https://github.com/nicolajack/bankBot"
+                        deployLink={null}
                         image={bankBot}
                     />
-                    <Projects 
+                    <ProjectCard 
                         name="Dawn2Dusk" 
-                        description="A full-stack web app displaying sunrise and sunset times around the world. Built with React, Google Gemini API, and React Leaflet." 
+                        category="Data Viz"
+                        description="A full-stack web app displaying sunrise and sunset times around the world with interactive maps." 
+                        tags={['React', 'Gemini API', 'React Leaflet']}
                         github="https://github.com/nicolajack/dawn2dusk" 
                         deployLink="https://dawn2dusk.netlify.app/"
                         image={dawn2duskImg}
+                        featured={true}
                     />
-                    <Projects 
+                    <ProjectCard 
                         name="Rock, Paper, Scissors" 
+                        category="Computer Vision"
                         description="A Next.js app using MediaPipe hand gesture recognition to play rock paper scissors using your webcam." 
+                        tags={['Next.js', 'MediaPipe', 'JavaScript']}
                         github="https://github.com/nicolajack/RPSApp" 
                         deployLink="https://rpsncj.netlify.app/"
                         image={rpsImg}
                     />
-                    <Projects 
+                    <ProjectCard 
                         name="Tamagit" 
+                        category="Chrome Extension"
                         description="A virtual pet chrome extension that integrates with GitHub to level up your pet based on your coding activity." 
+                        tags={['JavaScript', 'GitHub API', 'Chrome Extension']}
                         github="https://github.com/nicolajack/tamagit" 
-                        deployLink="https://github.com/nicolajack/tamagit"
+                        deployLink={null}
                         image={tamagitImg}
                     />
-                    <Projects 
+                    <ProjectCard 
                         name="SQL Spotify Stats" 
-                        description="A simple web app to display time left in an exam while displaying relevant notes/reminders." 
+                        category="SQL / Analytics"
+                        description="A database application querying personal Spotify streaming history using custom SQL analytics." 
+                        tags={['SQL', 'React', 'Node.js']}
                         github="https://github.com/nicolajack/spotifySQLStats" 
-                        deployLink="https://github.com/nicolajack/spotifySQLStats"
+                        deployLink={null}
                         image={spotifySQLImg}
                     />
                 </div>
             </div>
 
-            <div id="exp" className="scroll-reveal">
-                <h2>leadership</h2>
-                <Experiences
-                    title="Director of Engineering"
-                    info="Hack4Impact, Boston University"
-                    dates="December, 2025 - Present"
-                    bullets={["Lead BU Hack4Impact’s Impact Program, managing 3-4 teams of student interns working on web development projects", "Oversee all ongoing projects and ensure successful delivery to nonprofit partners", "Mentor and support software engineers in their professional development"]}>
-                </Experiences>
-                <Experiences
-                    title="Vice Director"
-                    info="BU Quantum, Boston University"
-                    dates="May, 2025 - Present"
-                    bullets={["Assist the Director in managing BU Quantum’s operations and events", "Build and maintain BU Quantum's website", "Design and run BU Quantum's social media accounts"]}>
-                </Experiences>
-                <Experiences
-                    title="Marketing Director"
-                    info="Hack4Impact, Boston University"
-                    dates="May, 2025 - December, 2025"
-                    bullets={["Oversaw Hack4Impact’s marketing and outreach efforts", "Managed Hack4Impact’s social media accounts and website", "Collaborated with Hack4Impact’s Executive Board to foster an inclusive environment"]}>
-                </Experiences>
-                <Experiences
-                    title="Lead SWE"
-                    info="Impact Team, Hack4Impact, Boston University"
-                    dates="May, 2025 - December, 2025"
-                    bullets={["Led a team of 3 software engineers to build a full-stack web app for a nonprofit organization", "Oversaw the development of the app and ensured it met the needs of the nonprofit"]}>
-                </Experiences>
-                <Experiences
-                    title="Bits Facilitator"
-                    info="Girls Who Code, Boston University"
-                    dates="March, 2025 - December, 2025"
-                    bullets={["Participated in Boston University’s Girls Who Code Bits and Bytes program", "Taught young girls in grades 3rd to 5th the basics of coding in Python and Scratch", "Engaged with students and modeled positive, inclusive language and behavior"]}>
-                </Experiences>
-                <Experiences
-                    title="Website Developer"
-                    info="Pinky Toe Paper, Boston University"
-                    dates="March, 2025 - December, 2025"
-                    bullets={["Co-Website Developer for Boston University’s intersectional-feminist satire publication, Pinky Toe Paper", "Handle front-end website development tasks", "Collaborate with Pinky Toe’s Executive Board to foster an inclusive publication"]}>
-                </Experiences>
-            </div>
-
-            <div id="exp" className="scroll-reveal">
-                <h2>experience</h2>
-                <Experiences
-                    title="CS 111 Course Assistant"
-                    info="Boston University, Boston, MA"
-                    dates="August, 2025 - Present"
-                    bullets={["Assist students in CS 111 labs and office hours with debugging and understanding course material.", 
-                    "Hold weekly office hours to help students with coursework and projects.", 
-                    "Grade assignments and provide constructive feedback to help students improve their coding skills."]}>
-                </Experiences>
-                <Experiences 
-                    title="Fitness Attendant" 
-                    info="FitRec, Boston, MA" 
-                    dates="January, 2024 - September, 2025" 
-                    bullets={["Built relationships with clients to ensure their satisfaction with services provided.", 
-                    "Enforced rules and regulations and maintained safety and order by monitoring patrons' facility use.", 
-                    "Promoted healthy spirit, mind, and body philosophy."]}>
-                </Experiences>
-                <Experiences 
-                    title="Shift Leader" 
-                    info="Three Sisters, Providence, RI" 
-                    dates="June, 2021 - October, 2023" 
-                    bullets={["Trained new employees in job duties, safety procedures, and company policies.", 
-                    "Provided excellent customer service and developed strong relationships with customers.", 
-                    "Held team members accountable during shift by effectively coaching to improve performance."]}>
-                </Experiences>
-                <Experiences 
-                    title="Student" 
-                    info="Boston University, Boston, MA" 
-                    dates="January, 2024 - May, 2027" 
-                    bullets={["Currently pursuing a BA in Computer Science.", "3.99 GPA", "Member of Girls Who Code, Women in Computer Science, Hack4Impact and Forge Design Labs.", "Prominent coursework: Intro to CS 1 & 2, Computer Systems, Combinatorics, Linear Algebra, Geometric Algorithms, Probability in Computing, Analysis of Algorithms, Distributed Systems, Database Systems."]}>
-                </Experiences>
-            </div>
-
-            <div id="exp" className="scroll-reveal">
-                <h2>relevant coursework</h2>
-                <h3 id="sem2">fall 2026</h3>
-                <Classes
-                    title="CS 357: Introduction to Information Security"
-                    info="Provides basic concepts needed for understanding information security. Discusses vulnerabilities, design principles, basic algorithms, security definitions, and analytical methods. Covers system security, network security, web security, cryptography, and data privacy. Also addresses social, ethical, and policy aspects of security."
-                    title2="CS 320: Concepts of Programming Languages"
-                    info2="Concepts involved in the design of programming languages. Bindings, argument transmission, and control structures. Environments: compile-time, load-time, and run-time. Interpreters."
-                    title3="CS 115: Academic Writing in Computer Science"
-                    info3="Writing Intensive unit through the topic of computer science. Students engage with readings and discussions in current computer science issues. The course focuses on teaching critical reading, creating a strong argument, and engaging with a variety of sources."
-                >
-                </Classes>
-                <OldClasses
-                    sem="spring 2026"
-                    title="CS 460: Introduction to Database Systems"
-                    info="Examines entity-relationship, relational, and object-oriented data models; commercial query languages: SQL, relational algebra, relational calculus, and QBE; file organization, indexing and hashing, query optimization, transaction processing, concurrency control and recovery,integrity, and security."
-                    grade="grade: A"
-                    title2="CS 411: Software Engineering"
-                    info2="Topics may include software tools, software testing methodologies, retrofitting, regression testing, structured design and structured programming, software characteristics and quality, complexity, entropy, deadlock, fault tolerance, formal proofs of program correctness, chief program teams, and structured walk-throughs."
-                    grade2="grade: A"
-                    title3="CS 351: Distributed Systems"
-                    info3="Covers fundamental concepts of distributed computing (logical clocks, causal order, snapshots, consensus, atomic commit), communication and synchronization primitives, concurrency control, task and data parallelism, data consistency, replication, and fault tolerance."
-                    grade3="grade: A">
-                </OldClasses>
-                <OldClasses
-                    sem="fall 2025"
-                    title="CS 330: Introduction to Analysis of Algorithms"
-                    info="Examines the basic principles of algorithm design and analysis; asymptotic analysis; graph algorithms; greedy algorithms; dynamic programming; network flows; polynomial- time reductions; NP-hard and NP-complete problems."
-                    grade="grade: A"
-                    title2="CS 237: Probability in Computing"
-                    info2="Introduction to basic probabilistic concepts and methods used in computer science. Develops an understanding of the crucial role played by randomness in computing, both as a powerful tool and as a challenge to confront and analyze. Emphasis on rigorous reasoning, analysis, and algorithmic thinking."
-                    grade2="grade: A">
-                </OldClasses>
-                <OldClasses
-                    sem="spring 2025"
-                    title="CS 210: Computer Systems"
-                    info="Fundamental concepts of computer systems and systems programming. Hardware fundamentals including digital logic, memory systems, processor design, buses, I/O subsystems, data representations, computer arithmetic, and instruction- set architecture. Software concepts including assembly language programming, operating systems, assemblers, linkers, and systems programming in C."
-                    grade="grade: A"
-                    title2="CS 132: Geometric Algorithms"
-                    info2="Basic concepts, data structures, and algorithms for geometric objects. Examples of topics: Cartesian geometry, transformations and their representation, queries and sampling, triangulations. Emphasis on rigorous reasoning and analysis, advancing algorithmic maturity and expertise in its application."
-                    grade2="grade: A">
-                </OldClasses>
-                <OldClasses 
-                    sem="fall 2024"
-                    title="CS 112: Introduction to Computer Science 2"
-                    info="Covers advanced programming techniques and data structures. Topics include recursion, algorithm analysis, linked lists, stacks, queues, trees, graphs, tables, searching, and sorting."
-                    grade="grade: A-"
-                    title2="CS 131: Combinatoric Structures"
-                    info2="Fundamentals of logic (the laws of logic, rules of inference, quantifiers, proofs and inductive reasoning), fundamental principles of counting (permutations, combinations), set theory, relations and functions, principles for manipulating basic combinatoric structures."
-                    grade2="grade: A">
-                </OldClasses>
-                <OldClasses
-                    sem="spring 2024"
-                    title="CS 111: Introduction to Computer Science 1"
-                    info="The first course for computer science majors and anyone seeking a rigorous introduction. Develops computational problem-solving skills by programming in the Python language, and exposes students to variety of other topics from computer science and its applications."
-                    grade="grade: A">
-                </OldClasses>
-            </div>
-
-            <div id="githubchartcontainer" className="scroll-reveal">
-                <h2>github contributions</h2>
-                <div id="chartcontainer">
-                    <img loading="lazy" src="http://ghchart.rshah.org/nicolajack" alt="nicolajack's Github chart" id="githubchart"/>
+            {/* EXPERIENCE SECTION */}
+            <section id="experience" className="experience-section scroll-reveal">
+                <div className="section-header">
+                    <span className="section-eyebrow">
+                        <FaBriefcase /> career & campus roles
+                    </span>
+                    <h2 className="section-title">experience</h2>
                 </div>
-            </div>
+
+                <div className="timeline-container">
+                    <ExperienceCard
+                        title="Technology Intern"
+                        info="PNC Financial Institution, Pittsburgh, PA"
+                        dates="May, 2026 - August 2026"
+                        bullets={[
+                            "Engineered Aria, an internal AI coding assistant (similar to GitHUb Copilot) custom-trained on proprietary systems to automate developer workflows for enterprise teams",
+                            "Authored 15+ instruction and skill files spanning API scaffolding, database connectivity (MongoDB, Kafka, Oracle), and Angular development, forming the core knowledge base driving the agent’s accuracy",
+                            "Reduced repetitive developer setup tasks (boilerplate, DB configuration, environment scaffolding) by 30%, designed with a modular framework to support upcoming enterprise-wide expansion"
+                        ]}
+                    />
+                    <ExperienceCard
+                        title="CS 111 Course Assistant"
+                        info="Boston University, Boston, MA"
+                        dates="August, 2025 - Present"
+                        bullets={[
+                            "Assist students in CS 111 labs and office hours with debugging and understanding course material.",
+                            "Hold weekly office hours to help students with coursework and projects.",
+                            "Grade assignments and provide constructive feedback to help students improve their coding skills."
+                        ]}
+                    />
+                    <ExperienceCard 
+                        title="Computer Science BA Student" 
+                        info="Boston University, Boston, MA" 
+                        dates="January, 2024 - Present (Expected: May, 2027)" 
+                        bullets={[
+                            "Currently pursuing a BA in Computer Science with a 3.99 GPA.",
+                            "Member of Girls Who Code, Women in Computer Science, Hack4Impact, and Forge Design Labs.",
+                            "Prominent coursework: Intro to CS 1 & 2, Computer Systems, Combinatorics, Linear Algebra, Geometric Algorithms, Probability in Computing, Analysis of Algorithms, Distributed Systems, Database Systems."
+                        ]}
+                    />
+                </div>
+            </section>
+
+            {/* LEADERSHIP SECTION */}
+            <section id="leadership" className="experience-section scroll-reveal">
+                <div className="section-header">
+                    <span className="section-eyebrow">
+                        <FaPeopleGroup /> community & impact
+                    </span>
+                    <h2 className="section-title">leadership</h2>
+                </div>
+
+                <div className="timeline-container">
+                    <ExperienceCard
+                        title="Director of Engineering"
+                        info="Hack4Impact, Boston University"
+                        dates="December, 2025 - Present"
+                        bullets={[
+                            "Lead BU Hack4Impact’s Impact Program, managing 3-4 teams of student interns working on web development projects",
+                            "Oversee all ongoing projects and ensure successful delivery to nonprofit partners",
+                            "Mentor and support software engineers in their professional development"
+                        ]}
+                    />
+                    <ExperienceCard
+                        title="Vice Director"
+                        info="BU Quantum, Boston University"
+                        dates="May, 2025 - Present"
+                        bullets={[
+                            "Assist the Director in managing BU Quantum’s operations and events",
+                            "Build and maintain BU Quantum's website",
+                            "Design and run BU Quantum's social media accounts"
+                        ]}
+                    />
+                    <ExperienceCard
+                        title="Marketing Director"
+                        info="Hack4Impact, Boston University"
+                        dates="May, 2025 - December, 2025"
+                        bullets={[
+                            "Oversaw Hack4Impact’s marketing and outreach efforts",
+                            "Managed Hack4Impact’s social media accounts and website",
+                            "Collaborated with Hack4Impact’s Executive Board to foster an inclusive environment"
+                        ]}
+                    />
+                    <ExperienceCard
+                        title="Lead SWE"
+                        info="Impact Team, Hack4Impact, Boston University"
+                        dates="May, 2025 - December, 2025"
+                        bullets={[
+                            "Led a team of 3 software engineers to build a full-stack web app for a nonprofit organization",
+                            "Oversaw the development of the app and ensured it met the needs of the nonprofit"
+                        ]}
+                    />
+                    <ExperienceCard
+                        title="Bits Facilitator"
+                        info="Girls Who Code, Boston University"
+                        dates="March, 2025 - December, 2025"
+                        bullets={[
+                            "Participated in Boston University’s Girls Who Code Bits and Bytes program",
+                            "Taught young girls in grades 3rd to 5th the basics of coding in Python and Scratch",
+                            "Engaged with students and modeled positive, inclusive language and behavior"
+                        ]}
+                    />
+                </div>
+            </section>
+
+            {/* RELEVANT COURSEWORK SECTION */}
+            <section id="coursework" className="coursework-section scroll-reveal">
+                <div className="section-header">
+                    <span className="section-eyebrow">
+                        <FaGraduationCap /> academic background
+                    </span>
+                    <h2 className="section-title">relevant coursework</h2>
+                </div>
+
+                <div className="coursework-container">
+                    <SemesterCard
+                        semester="Fall 2026"
+                        status="Current / Upcoming"
+                        defaultOpen={true}
+                        courses={[
+                            {
+                                code: "CS 357",
+                                title: "Introduction to Information Security",
+                                description: "Provides basic concepts needed for understanding information security. Discusses vulnerabilities, design principles, basic algorithms, security definitions, system/network security, web security, cryptography, and data privacy."
+                            },
+                            {
+                                code: "CS 320",
+                                title: "Concepts of Programming Languages",
+                                description: "Concepts involved in the design of programming languages. Bindings, argument transmission, control structures, compile-time/run-time environments, and interpreters."
+                            },
+                            {
+                                code: "CS 115",
+                                title: "Academic Writing in Computer Science",
+                                description: "Writing-intensive unit focused on critical reading, constructing arguments, and synthesizing technical source material on modern issues in computer science."
+                            }
+                        ]}
+                    />
+
+                    <SemesterCard
+                        semester="Spring 2026"
+                        courses={[
+                            {
+                                code: "CS 460",
+                                title: "Introduction to Database Systems",
+                                description: "Examines entity-relationship, relational, and object-oriented data models; SQL, relational algebra; indexing, query optimization, transaction processing, and concurrency control.",
+                                grade: "Grade: A"
+                            },
+                            {
+                                code: "CS 411",
+                                title: "Software Engineering",
+                                description: "Software testing methodologies, retrofitting, regression testing, structured design, software complexity, program correctness, and chief program teams.",
+                                grade: "Grade: A"
+                            },
+                            {
+                                code: "CS 351",
+                                title: "Distributed Systems",
+                                description: "Fundamental concepts of distributed computing (logical clocks, consensus, atomic commit), communication primitives, concurrency control, replication, and fault tolerance.",
+                                grade: "Grade: A"
+                            }
+                        ]}
+                    />
+
+                    <SemesterCard
+                        semester="Fall 2025"
+                        courses={[
+                            {
+                                code: "CS 330",
+                                title: "Introduction to Analysis of Algorithms",
+                                description: "Basic principles of algorithm design and analysis; asymptotic analysis; graph algorithms; greedy algorithms; dynamic programming; network flows; NP-completeness.",
+                                grade: "Grade: A"
+                            },
+                            {
+                                code: "CS 237",
+                                title: "Probability in Computing",
+                                description: "Probabilistic concepts and methods used in computer science. Emphasizes randomness as both a tool and analytical challenge with rigorous mathematical reasoning.",
+                                grade: "Grade: A"
+                            }
+                        ]}
+                    />
+
+                    <SemesterCard
+                        semester="Spring 2025"
+                        courses={[
+                            {
+                                code: "CS 210",
+                                title: "Computer Systems",
+                                description: "Hardware fundamentals (digital logic, memory, processor design) and systems programming in C, assembly language, operating systems, assemblers, and linkers.",
+                                grade: "Grade: A"
+                            },
+                            {
+                                code: "CS 132",
+                                title: "Geometric Algorithms",
+                                description: "Data structures and algorithms for geometric objects. Cartesian geometry, transformations, queries, sampling, and triangulations.",
+                                grade: "Grade: A"
+                            }
+                        ]}
+                    />
+
+                    <SemesterCard
+                        semester="Fall 2024"
+                        courses={[
+                            {
+                                code: "CS 112",
+                                title: "Introduction to Computer Science 2",
+                                description: "Advanced programming techniques and data structures including recursion, linked lists, stacks, queues, trees, graphs, tables, searching, and sorting.",
+                                grade: "Grade: A-"
+                            },
+                            {
+                                code: "CS 131",
+                                title: "Combinatoric Structures",
+                                description: "Laws of logic, rules of inference, quantifiers, proofs, fundamental principles of counting (permutations, combinations), set theory, relations, and functions.",
+                                grade: "Grade: A"
+                            }
+                        ]}
+                    />
+
+                    <SemesterCard
+                        semester="Spring 2024"
+                        courses={[
+                            {
+                                code: "CS 111",
+                                title: "Introduction to Computer Science 1",
+                                description: "Rigorous introduction to computational problem-solving using Python, covering fundamental programming concepts and practical applications.",
+                                grade: "Grade: A"
+                            }
+                        ]}
+                    />
+                </div>
+            </section>
+
+            {/* GITHUB CONTRIBUTIONS SECTION */}
+            <section id="github-contributions" className="github-section scroll-reveal">
+                <div className="section-header">
+                    <span className="section-eyebrow">
+                        <FaCodeCommit /> open source activity
+                    </span>
+                    <h2 className="section-title">github contributions</h2>
+                </div>
+
+                <div className="github-chart-card">
+                    {/* Card Header */}
+                    <div className="chart-header">
+                        <div className="user-badge">
+                            <FaGithub className="github-badge-icon" />
+                            <span className="username">@nicolajack</span>
+                        </div>
+                        <a 
+                            href="https://github.com/nicolajack" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            className="profile-link-btn"
+                        >
+                            <span>View Profile</span>
+                            <FaArrowUpRightFromSquare />
+                        </a>
+                    </div>
+
+                    {/* Responsive Chart Wrapper */}
+                    <div className="chart-wrapper">
+                        <img 
+                            loading="lazy" 
+                            src="https://ghchart.rshah.org/nicolajack" 
+                            alt="nicolajack's GitHub contribution graph" 
+                            className="github-chart-img"
+                        />
+                    </div>
+                </div>
+            </section>
             <Footer />
         </>
     )

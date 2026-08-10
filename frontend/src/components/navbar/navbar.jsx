@@ -1,35 +1,106 @@
-import darkMode from '../../assets/dark-mode.png'
+import React, { useState, useEffect } from 'react';
+import { FaMoon, FaSun } from 'react-icons/fa6';
 
 function Navbar() {
+    const [isDark, setIsDark] = useState(() => {
+        if (typeof window === 'undefined') {
+            return false;
+        }
+
+        return document.body.classList.contains('dark-mode') || window.matchMedia('(prefers-color-scheme: dark)').matches;
+    });
+    const [sidebarOpen, setSidebarOpen] = useState(false);
+
+    useEffect(() => {
+        const syncDarkState = () => {
+            setIsDark(document.body.classList.contains('dark-mode'));
+        };
+
+        syncDarkState();
+
+        const classObserver = new MutationObserver(syncDarkState);
+        classObserver.observe(document.body, { attributes: true, attributeFilter: ['class'] });
+
+        const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+        mediaQuery.addEventListener('change', syncDarkState);
+
+        return () => {
+            classObserver.disconnect();
+            mediaQuery.removeEventListener('change', syncDarkState);
+        };
+    }, []);
+
+    const toggleDarkMode = () => {
+        const nextIsDark = !isDark;
+        document.body.classList.toggle('dark-mode', nextIsDark);
+        setIsDark(nextIsDark);
+    };
+
     return (
-        <div>
-            <div id="sideBar">
-                <a id="close" onClick={() => document.getElementById("sideBar").style.display = "none"} href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#E1CDA1" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-x-icon lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
-                </a>
-                <a href="#about">about</a>
-                <a href="#projects">projects</a>
-                <a href="#exp">experiences</a>
-                <a href="#chat">chat</a>
-                <button id="darkModeToggle"onClick={() => document.body.classList.toggle("dark-mode")}>
-                    <img id="darkMode" src={darkMode} alt="dark mode" />
+        <header className="navbar-wrapper">
+            {/* Mobile Sidebar */}
+            <aside className={`sidebar ${sidebarOpen ? 'open' : ''}`}>
+                <button 
+                    className="close-btn" 
+                    onClick={() => setSidebarOpen(false)}
+                    aria-label="Close menu"
+                >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
                 </button>
-            </div>
+                
+                <nav className="sidebar-links">
+                    <a href="#about" onClick={() => setSidebarOpen(false)}>about</a>
+                    <a href="#projects" onClick={() => setSidebarOpen(false)}>projects</a>
+                    <a href="#exp" onClick={() => setSidebarOpen(false)}>experiences</a>
+                    <a href="#chat" onClick={() => setSidebarOpen(false)}>chat</a>
+                </nav>
+
+                <button 
+                    className="dark-mode-toggle sidebar-toggle" 
+                    onClick={toggleDarkMode} 
+                    aria-label="Toggle dark mode"
+                >
+                    {isDark ? <FaSun className="nav-icon sun" /> : <FaMoon className="nav-icon moon" />}
+                    <span>{isDark ? 'Light Mode' : 'Dark Mode'}</span>
+                </button>
+            </aside>
+
+            {/* Backdrop overlay for mobile menu */}
+            {sidebarOpen && <div className="sidebar-overlay" onClick={() => setSidebarOpen(false)} />}
+
+            {/* Main Navbar */}
             <div id="navbar">
-                <h1 id="name" onClick={() => window.open('https://www.instagram.com/nicojqckson/', '_blank')}><em>n</em>ico jackso<em>n</em>*</h1>
-                <a className="hideOnMobile" href="#about">about</a>
-                <a className="hideOnMobile" href="#projects">projects</a>
-                <a className="hideOnMobile" href="#exp">experiences</a>
-                <a className="hideOnMobile" href="#chat">chat</a>
-                <button className="hideOnMobile" id="darkModeToggle"onClick={() => document.body.classList.toggle("dark-mode")}>
-                    <img id="darkMode" src={darkMode} alt="dark mode" />
+                <h1 id="name" onClick={() => window.open('https://www.instagram.com/nicojqckson/', '_blank')}>
+                    <em>n</em>ico jackso<em>n</em>*
+                </h1>
+
+                {/* Desktop Menu */}
+                <nav className="nav-links hideOnMobile">
+                    <a href="#about">about</a>
+                    <a href="#projects">projects</a>
+                    <a href="#exp">experiences</a>
+                    <a href="#chat">chat</a>
+
+                    <button 
+                        className="dark-mode-toggle" 
+                        onClick={toggleDarkMode} 
+                        aria-label="Toggle dark mode"
+                    >
+                        {isDark ? <FaSun className="nav-icon sun" /> : <FaMoon className="nav-icon moon" />}
+                    </button>
+                </nav>
+
+                {/* Mobile Menu Trigger Button (Hidden on Desktop) */}
+                <button 
+                    className="menuButton" 
+                    onClick={() => setSidebarOpen(true)}
+                    aria-label="Open menu"
+                >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 12h18"/><path d="M3 18h18"/><path d="M3 6h18"/></svg>
                 </button>
-                <a className="menuButton" onClick={() => document.getElementById("sideBar").style.display = "flex"} href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#E1CDA1" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-align-justify-icon lucide-align-justify"><path d="M3 12h18"/><path d="M3 18h18"/><path d="M3 6h18"/></svg>
-                </a>
             </div>
-        </div>
-    )
+        </header>
+    );
 }
 
-export default Navbar
+export default Navbar;
