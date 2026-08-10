@@ -52,7 +52,6 @@ function Navbar() {
                     <a href="#about" onClick={() => setSidebarOpen(false)}>about</a>
                     <a href="#projects" onClick={() => setSidebarOpen(false)}>projects</a>
                     <a href="#exp" onClick={() => setSidebarOpen(false)}>experiences</a>
-                    <a href="#chat" onClick={() => setSidebarOpen(false)}>chat</a>
                 </nav>
 
                 <button 
@@ -79,7 +78,6 @@ function Navbar() {
                     <a href="#about">about</a>
                     <a href="#projects">projects</a>
                     <a href="#exp">experiences</a>
-                    <a href="#chat">chat</a>
 
                     <button 
                         className="dark-mode-toggle" 
