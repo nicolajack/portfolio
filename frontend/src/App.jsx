@@ -220,16 +220,6 @@ function App() {
                         ]}
                     />
                     <ExperienceCard
-                        title="Vice Director"
-                        info="BU Quantum, Boston University"
-                        dates="May, 2025 - Present"
-                        bullets={[
-                            "Assist the Director in managing BU Quantum’s operations and events",
-                            "Build and maintain BU Quantum's website",
-                            "Design and run BU Quantum's social media accounts"
-                        ]}
-                    />
-                    <ExperienceCard
                         title="Marketing Director"
                         info="Hack4Impact, Boston University"
                         dates="May, 2025 - December, 2025"
