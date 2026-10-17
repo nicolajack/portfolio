@@ -60,7 +60,7 @@ function Footer() {
                     <a 
                         target="_blank" 
                         rel="noreferrer" 
-                        href="Nicola_Jackson_resume.pdf" 
+                        href="Nicola_Jackson.pdf" 
                         aria-label="Open resume PDF"
                         className="footer-link-btn"
                         title="Resume PDF"
