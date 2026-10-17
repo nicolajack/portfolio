@@ -63,7 +63,7 @@ function Profile() {
                             <span>contact</span>
                         </a>
                         <a 
-                            href="Nicola_Jackson.pdf" 
+                            href="/Nicola_Jackson.pdf"
                             target="_blank" 
                             rel="noopener noreferrer" 
                             className="profile-btn secondary-btn"
