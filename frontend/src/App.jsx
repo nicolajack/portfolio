@@ -167,9 +167,19 @@ function App() {
 
                 <div className="timeline-container">
                     <ExperienceCard
+                        title="CS 111 Teaching Assistant"
+                        info="Boston University, Boston, MA"
+                        dates="August, 2026 - Present"
+                        bullets={[
+                            "Lead weekly lab sections for 200+ students, teaching core Python concepts, data structures, and object-oriented programming.",
+                            "Grade midterm exams, finals, and programming assignments using standardized rubrics to provide targeted technical feedback.",
+                            "Host weekly office hours to assist students with algorithmic thinking, code optimization, and real-time debugging."
+                        ]}
+                    />
+                    <ExperienceCard
                         title="Technology Intern"
                         info="PNC Financial Institution, Pittsburgh, PA"
-                        dates="May, 2026 - August 2026"
+                        dates="May, 2026 - August, 2026"
                         bullets={[
                             "Engineered Aria, an internal AI coding assistant (similar to GitHUb Copilot) custom-trained on proprietary systems to automate developer workflows for enterprise teams",
                             "Authored 15+ instruction and skill files spanning API scaffolding, database connectivity (MongoDB, Kafka, Oracle), and Angular development, forming the core knowledge base driving the agent’s accuracy",
@@ -179,11 +189,11 @@ function App() {
                     <ExperienceCard
                         title="CS 111 Course Assistant"
                         info="Boston University, Boston, MA"
-                        dates="August, 2025 - Present"
+                        dates="August, 2025 - August, 2026"
                         bullets={[
-                            "Assist students in CS 111 labs and office hours with debugging and understanding course material.",
-                            "Hold weekly office hours to help students with coursework and projects.",
-                            "Grade assignments and provide constructive feedback to help students improve their coding skills."
+                            "Assisted students in CS 111 labs and office hours with debugging and understanding course material.",
+                            "Held weekly office hours to help students with coursework and projects.",
+                            "Graded assignments and provided constructive feedback to help students improve their coding skills."
                         ]}
                     />
                     <ExperienceCard 
