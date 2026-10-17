@@ -51,7 +51,9 @@ function Navbar() {
                 <nav className="sidebar-links">
                     <a href="#about" onClick={() => setSidebarOpen(false)}>about</a>
                     <a href="#projects" onClick={() => setSidebarOpen(false)}>projects</a>
-                    <a href="#exp" onClick={() => setSidebarOpen(false)}>experiences</a>
+                    <a href="#experience" onClick={() => setSidebarOpen(false)}>experience</a>
+                    <a href="#leadership" onClick={() => setSidebarOpen(false)}>leadership</a>
+                    <a href="#coursework" onClick={() => setSidebarOpen(false)}>coursework</a>
                 </nav>
 
                 <button 
@@ -77,7 +79,9 @@ function Navbar() {
                 <nav className="nav-links hideOnMobile">
                     <a href="#about">about</a>
                     <a href="#projects">projects</a>
-                    <a href="#exp">experiences</a>
+                    <a href="#experience">experience</a>
+                    <a href="#leadership">leadership</a>
+                    <a href="#coursework">coursework</a>
 
                     <button 
                         className="dark-mode-toggle" 

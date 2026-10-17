@@ -163,6 +163,15 @@ button:hover,
    NAVBAR & SIDEBAR STYLES
    ========================================================================== */
 
+/* Keep anchored section headings clear of the sticky navbar. */
+.about-section,
+#projects,
+.experience-section,
+.coursework-section,
+.github-section {
+  scroll-margin-top: 6rem;
+}
+
 .navbar-wrapper {
   position: sticky;
   top: 0;
@@ -2362,6 +2371,14 @@ input::placeholder {
 }
 
 @media (max-width: 768px) {
+  .about-section,
+  #projects,
+  .experience-section,
+  .coursework-section,
+  .github-section {
+    scroll-margin-top: 5rem;
+  }
+
   #about,
   #chat,
   #projects,
