@@ -7,6 +7,7 @@
   --surface-color: #FFFFFF;
   --text-primary: #1C1917;
   --text-muted: #78716C;
+  --text-readable: #57534E;
   --accent-color: #166534;
   --accent-hover: #14532D;
   --accent-text: #FFFFFF;
@@ -26,6 +27,7 @@ body.dark-mode {
   --surface-color: #0A1410;
   --text-primary: #D4E8D5;
   --text-muted: #5A7D62;
+  --text-readable: #B7C9BA;
   --accent-color: #8FD9A0;
   --accent-hover: #B4ECBE;
   --accent-text: #050A06;
@@ -1332,7 +1334,7 @@ button:hover,
   font-family: Helvetica, Arial, sans-serif;
   font-size: 0.9rem;
   line-height: 1.55;
-  color: var(--text-muted);
+  color: var(--text-readable);
   margin: 0 0 1rem 0;
 }
 
@@ -1351,7 +1353,7 @@ button:hover,
   font-family: Helvetica, Arial, sans-serif;
   font-size: 0.725rem;
   font-weight: 500;
-  color: var(--text-muted);
+  color: var(--text-readable);
   background-color: var(--bg-color);
   border: 1px solid var(--border-color);
   padding: 0.25rem 0.6rem;
@@ -1653,7 +1655,7 @@ input::placeholder {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 0.925rem;
   line-height: 1.55;
-  color: var(--text-muted);
+  color: var(--text-readable);
 }
 
 .bullet-arrow {
@@ -1879,7 +1881,7 @@ input::placeholder {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 0.85rem;
   line-height: 1.5;
-  color: var(--text-muted);
+  color: var(--text-readable);
   margin: 0;
 }
 
